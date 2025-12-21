@@ -1,0 +1,151 @@
+.features {
+    display: grid;
+    row-gap: 25px;
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    figure {
+        flex-shrink: 0;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+
+        color: #fff;
+        padding: 12px 25px;
+
+        figure {
+            align-self: center;
+        }
+
+        &>div:has(h4) {
+            margin-right: 20px;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+
+        &>div:has(p) {
+            padding: 12px 12px 12px 20px;
+            font-size: 18px;
+
+            p+p {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .w-shadow {
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .5));
+    }
+
+    .full-height-image {
+        width: 120px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .image-with-caption {
+        padding: 12px 12px 8px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 122px;
+
+        figcaption {
+            font-size: 12px;
+            font-weight: 500;
+            text-align: right;
+        }
+    }
+
+    .two-images {
+        padding: 12px 12px 14px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img:first-child {
+            align-self: flex-end;
+        }
+    }
+}
+
+.bg-red-1 {
+    background-color: hsl(357, 100%, 34%);
+}
+
+.bg-red-2 {
+    background-color: hsl(357 100% 34% / .15);
+}
+
+.bg-gray-1 {
+    background-color: #707070;
+}
+
+.bg-gray-2 {
+    background-color: hsl(0 0% 44% / .15);
+}
+
+.bg-gold-1 {
+    background-color: #A28951;
+}
+
+.bg-gold-2 {
+    background-color: hsl(41 33% 48% / .15);
+}
+
+.bg-blue-1 {
+    background-color: #254E7C;
+}
+
+.bg-blue-2 {
+    background-color: hsl(212 54% 32% / .15);
+}
+
+.bg-burgundy-1 {
+    background-color: #5D3F3F;
+}
+
+.bg-burgundy-2 {
+    background-color: hsl(0 19% 31% / .15);
+}
+
+.bg-green-1 {
+    background-color: #5D7C73;
+}
+
+.bg-green-2 {
+    background-color: hsl(163 14% 43% / .15);
+}
+
+.features-title {
+    font-size: 60px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+}

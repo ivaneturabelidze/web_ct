@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ28QQZRN7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XQ28QQZRN7');
+    </script>
+
+
+    <title>Caucasus Travel - Contact </title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/joinUs.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS -->
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="./assets/js/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<style>
+    .surname input {
+        width: 274px;
+    }
+
+    .email input {
+        width: 244px;
+    }
+
+    .name input {
+        width: 245px;
+
+    }
+
+    .name {
+        margin-left: -1px;
+    }
+
+    .phone input {
+        width: 245px;
+    }
+
+    .company input {
+        width: 274px;
+    }
+
+    .position input {
+        width: 243px;
+    }
+
+    .input-container {
+        gap: 13px;
+        justify-content: space-between;
+    }
+
+    .input-container label {
+        line-height: 30px;
+    }
+
+    .textarea-popup div {
+        width: calc(100% - 200px);
+    }
+
+    .inputAlike {
+        margin-left: 13px;
+    }
+
+    .inputAlike--company {
+        width: 304px;
+    }
+
+    .input-container:nth-child(3) {
+        margin-top: 16px;
+        position: relative;
+        margin-bottom: 25px;
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="site-header bg-black">
+        <div class="container">
+            <div class="site-header-wrapper">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="/">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Main Menu -->
+                <nav class="site-navigation" role="main navigation">
+                    <ul class="site-menu">
+
+                        <li class="menu-item">
+                            <a class="menu-link joinus " href="joinUs.html">JOIN US </a>
+
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link  home" onclick="scrollToElement('home')" style="cursor: pointer;"
+                                href="http://www.caucasustravel.com/home.html">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link experiences" href="experiences.html">EXPERIENCES</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link dmc" href="DMC.html"> <b> DMC</b> - SOUTH CAUCASUS</a>
+                            <div class="dropdown__content" style="min-width: 165px;">
+                                <ul>
+                                    <li> <a href="http://www.caucasustravel.com/georgia.html">georgia</a> </li>
+                                    <li><a href="http://www.caucasustravel.com/armenia.html">armenia</a></li>
+                                    <li><a href="http://www.caucasustravel.com/azerbaijan.html">azerbaijan</a></li>
+                                    <li><a href="http://www.caucasustravel.com/combined-tours.html">COMBINED
+                                            TOURS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link tour-types" href="tour-types.html">TOURS</a>
+                            <div class="dropdown__content" style="min-width: 260px;">
+                                <ul>
+                                    <li> <a href="http://www.caucasustravel.com/tour-types.html">LIST OF THE TOURS
+                                            BY TYPE</a> </li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/tour-types-inner/culture.html">CULTURE</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/interest.html">SPECIAL
+                                            INTEREST</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/nature.html">NATURE</a>
+                                    </li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/tour-types-inner/adventure.html">ADVENTURE</a>
+                                    </li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/tour-types-inner/gourmet.html">GOURMET</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/city.html">CITY
+                                            BREAK</a></li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/tour-types-inner/recreation.html">RECREATION</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/sport.html">SPORT
+                                            & LEISURE</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/shore.html">SHORE
+                                            EXCURSIONS</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/tour-types-inner/guaranteed.html">GURANTEED
+                                            DEPARTURE
+                                            TOURS</a></li>
+                                    <li><a href="https://www.caucasustravel.com/services.html#day-tours"> DAY TOURS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link incentive" href="mice.html">INCENTIVES & EVENTS</a>
+                            <div class="dropdown__content" style="min-width: 165px;">
+                                <ul>
+                                    <li> <a href="http://www.caucasustravel.com/mice.html#incentives">incentives</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/mice.html#events">events</a></li>
+                                    <li><a href="http://www.caucasustravel.com/mice.html#projects">SPECIAL
+                                            PROJECTS</a></li>
+                                    <li><a href="http://www.caucasustravel.com/mice.html#meetings">conferences</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link services" href="services.html">SERVICES</a>
+                            <div class="dropdown__content" style="min-width: 210px;">
+                                <ul>
+                                    <li> <a href="http://www.caucasustravel.com/services.html#air-tickets">air
+                                            ticketing (iata)</a> </li>
+                                    <li><a href="http://www.caucasustravel.com/services.html#hotel-reservation">hotel
+                                            reservation</a></li>
+                                    <li><a href="http://www.caucasustravel.com/services.html#meet-and-greet">meet &
+                                            greet</a></li>
+
+                                    <li><a
+                                            href="http://www.caucasustravel.com/services.html#transportation">transportation</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/services.html#guides">guides /
+                                            enterpreters</a></li>
+                                    <li><a href="http://www.caucasustravel.com/services.html#day-tours">day
+                                            trips</a>
+                                    </li>
+                                    <li><a href="http://www.caucasustravel.com/services.html#dining">dining</a></li>
+
+                                    <li><a href="http://www.caucasustravel.com/services.html#vip-concierge">vip &
+                                            concierge</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link " href="about-us.html">ABOUT US</a>
+                            <div class="dropdown__content" style="min-width: 270px;">
+                                <ul class="abb">
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#little-of-history">Little
+                                            bit of History</a>
+                                    </li>
+                                    <li> <a href="http://www.caucasustravel.com/about-us.html#our-team">our team</a>
+                                    </li>
+
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#network-partnership">Partnership
+                                            & Network</a></li>
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#liabilities-insurance">liabilities
+                                            &
+                                            insurance</a></li>
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#commitments-sponsorship">commitments
+                                            &
+                                            sponsorship</a></li>
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#awards-media">awards &
+                                            media</a></li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/about-us.html#affiliations">affiliations</a>
+                                    </li>
+                                    <li><a
+                                            href="http://www.caucasustravel.com/about-us.html#georgian-hospitality-group">Georgian
+                                            hospitality
+                                            group</a></li>
+                                    <li><a href="http://www.caucasustravel.com/about-us.html#meet-us">meet us on
+                                            travel trade
+                                            fairs</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link active" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Main Menu End -->
+
+                <!-- Language Switcher -->
+                <div class="language-switcher" role="language switcher">
+                    <a href="/" class="language-switcher-item active" aria-value="English">
+                        <img src="assets/images/GB.png" alt="">
+                    </a>
+                </div>
+                <!-- Language Switcher End -->
+                <img src="./assets/images/menu-right.svg" alt="" class="burger-button">
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main -->
+    <main>
+        <div class="real__contact">
+
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h1 class="page-title">
+                            THANK YOU FOR CONTACTING US
+                        </h1>
+                        <h2>
+                            Please fill fields bellow
+                        </h2>
+
+                        <form action="">
+                            <div>
+                                <div class="input-container">
+                                    <div class="radio-buttons ">
+                                        <div>
+                                            <div>
+                                                <input type="checkbox" name="person" id="" class="single-checkbox1"
+                                                    value="2">
+                                                <span></span>
+                                            </div>
+                                            <div class="inputAlike inputAlike--company">
+                                                Travel Company, or Corporate <sup> *</sup>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <input type="checkbox" name="person" id="" class="single-checkbox1"
+                                                    value="1">
+                                                <span></span>
+                                            </div>
+                                            <div class="inputAlike inputAlike--privatePerson">
+                                                Private Person <sup> *</sup>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p class="neccessary--fields">
+                                        * Necessary fields
+                                    </p>
+
+                                </div>
+                                <div class="input-container ">
+                                    <div class="radio-buttons" style="margin-right: 0;">
+
+                                        <label for="">MR
+                                            <div>
+                                                <input type="checkbox" name="" id="" class="single-checkbox">
+                                                <span></span>
+                                            </div>
+
+                                        </label>
+                                        <label for="">MRS
+                                            <div>
+                                                <input type="checkbox" name="" id="" class="single-checkbox">
+                                                <span></span>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                    <div class="name">
+                                        <label for="name">
+                                            Name <span>*</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="surname">
+                                        <label for="surname">
+                                            Surname <span>*</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">
+                                            E-mail <span>*</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+
+                                </div>
+                                <div class="input-container " style="justify-content: flex-start;">
+                                    <div class="country-input">
+                                        <label for="country">
+                                            Country <span> *</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="phone">
+                                        <label for="phone">
+                                            Phone <span> *</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="company">
+                                        <label for="name">
+                                            Company Name <span> *</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+
+                                    <div class="position">
+                                        <label for="position">
+                                            Position <span> *</span>
+                                        </label>
+                                        <input type="text" name="" id="">
+                                    </div>
+
+
+                                    <!-- <div class="necc">
+                                        * Necessary fields
+                                    </div> -->
+                                </div>
+                                <div>
+                                    <h3>
+                                        <b>SUBJECT</b>
+                                    </h3>
+                                    <div class="textarea-popup">
+                                        <textarea name="" id="" cols="30" rows="10">
+
+                                            </textarea>
+                                        <div class="d-none">
+                                            <p>THANK YOU FOR INTEREST</p>
+                                            <p>We will contact you soon </p>
+                                            <p>Caucasus Travel Team</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="submitter">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6Le4rfAoAAAAADHO755tM66tYOZ5lLPMfsO4lqXz"></div>
+
+
+                                        <button type="button"><span>SUBMIT</span> </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12996.568948181544!2d44.81541682875253!3d41.688647976430055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf9a29054db%3A0x8a2a06e819d96054!2sCaucasus%20Travel!5e0!3m2!1sen!2sge!4v1698059319603!5m2!1sen!2sge"
+                            width="415px" height="336" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="display: flex; justify-content: space-between;margin-top: 25px;" class="real__contact--right">
+                            <img src="./assets/images/office.svg" alt="" style="margin-top: 20px;">
+                            <div style="display: flex;flex-direction: column;align-items: flex-end;">
+                                <div
+                                    style="display: flex; gap: 10px; justify-content: flex-start;margin-top: 20px;width: 212px;">
+                                    <div style="display: flex;flex-direction: column;">
+                                        <span>Phone:</span>
+
+                                    </div>
+                                    <div>
+                                        <p> +995 322 987400</p>
+                                        <p> +995 322 931175</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 10px;margin-top: 10px;">
+                                        office hours: <br>
+                                        Mon - Fri 10:00 - 18:00
+                                    </p>
+
+                                    <p style="margin-bottom: 10px;margin-top: 10px;">
+                                        22, Peritsvaleba Street, <br>
+                                        0103, Tbilisi, Georgia
+                                    </p>
+                                    <p>E-mail:</p>
+                                    <p>georgia@caucasustravel.com</p>
+                                    <p style="margin-top: 10px;"> caucasustravel.com</p>
+                                    <p> caucasus.travel </p>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <!-- Main End -->
+
+
+    <!-- Footer Start  -->
+
+    <footer class="footer section__in__view" style="margin-top: 14px;">
+        <div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="bottom__container">
+                        <div>
+
+                            <ul>
+                                <h2 onclick="window.location.href='http://www.caucasustravel.com/about-us.html'">
+                                    ABOUT US</h2>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#little-of-history">little
+                                        bit
+                                        of history</a>
+                                </li>
+                                <li> <a href="http://www.caucasustravel.com/about-us.html#our-team" class="active">our
+                                        team</a>
+                                </li>
+
+                                <li><a href="http://www.caucasustravel.com/about-us.html#network-partnership">Partnership
+                                        & Network</a></li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#liabilities-insurance">liabilities
+                                        &
+                                        insurance</a></li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#commitments-sponsorship">commitments
+                                        &
+                                        sponsorship</a></li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#awards-media">awards &
+                                        media</a></li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#affiliations">affiliations</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#georgian-hospitality-group">Georgian
+                                        hospitality
+                                        group</a></li>
+                                <li><a href="http://www.caucasustravel.com/about-us.html#meet-us">meet us on
+                                        travel trade
+                                        fairs</a></li>
+                            </ul>
+                            <a href="./home.html"> <button>NEWS BOARD</button></a>
+
+                            <div class="cookies">
+                                <h3>Cookies</h3><br>
+                                <p>This Cookies Policy explains what Cookies are and how We use them. You should
+                                    read this policy so You can understand what type
+                                    of cookies We use, or the information We collect using
+                                    Cookies and how that information is used. <a target="_blank"
+                                        href="https://www.freeprivacypolicy.com/live/69d9ed02-390a-4646-ba1d-d487a516278d"
+                                        target="_blank" rel="noopener noreferrer">Learn more.</a> </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <h2 onclick="window.location.href='http://www.caucasustravel.com/DMC.html'">DMC -
+                                <span> South caucasus</span>
+                            </h2>
+                            <ul>
+                                <li> <a href="http://www.caucasustravel.com/georgia.html">georgia</a> </li>
+                                <li><a href="http://www.caucasustravel.com/armenia.html">armenia</a></li>
+                                <li><a href="http://www.caucasustravel.com/azerbaijan.html">azerbaijan</a></li>
+                                <li><a href="http://www.caucasustravel.com/combined-tours.html" class="active">COMBINED
+                                        TOURS</a></li>
+                                <h2 onclick="window.location.href='http://www.caucasustravel.com/tour-types.html'">
+                                    tours</h2>
+                                <li> <a href="http://www.caucasustravel.com/tour-types.html#list">LIST OF THE
+                                        TOURS
+                                        BY TYPE</a> </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/culture.html">CULTURE</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/interest.html">SPECIAL
+                                        INTEREST</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/nature.html">NATURE</a>
+                                </li>
+                                <li><a
+                                        href="http://www.caucasustravel.com/tour-types-inner/adventure.html">ADVENTURE</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/gourmet.html">GOURMET</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/city.html">CITY
+                                        BREAK</a></li>
+                                <li><a
+                                        href="http://www.caucasustravel.com/tour-types-inner/recreation.html">RECREATION</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/sport.html">SPORT
+                                        & LEISURE</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/shore.html">SHORE
+                                        EXCURSIONS</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/tour-types-inner/guaranteed.html"
+                                        class="active">GURANTEED
+                                        DEPARTURE
+                                        TOURS</a></li>
+                            </ul>
+                            <p class="credits">ALL RIGHTS RESERVED © 2023</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h2 onclick="window.location.href='http://www.caucasustravel.com/mice.html'">
+                                incentives & Events</h2>
+                            <ul>
+                                <li> <a href="http://www.caucasustravel.com/mice.html#incentives">incentives</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/mice.html#events">events</a></li>
+                                <li><a href="http://www.caucasustravel.com/mice.html#projects">SPECIAL
+                                        PROJECTS</a></li>
+                                <li><a href="http://www.caucasustravel.com/mice.html#meetings"
+                                        class="active">conferences</a>
+                                </li>
+                                <h2 onclick="window.location.href='http://www.caucasustravel.com/services.html'">
+                                    services</h2>
+                                <li> <a href="http://www.caucasustravel.com/services.html#air-tickets">air
+                                        tickets (iata)</a> </li>
+                                <li><a href="http://www.caucasustravel.com/services.html#meet-and-greet">meet &
+                                        greet</a></li>
+                                <li><a
+                                        href="http://www.caucasustravel.com/services.html#transportation">transportation</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/services.html#hotel-reservation">hotel
+                                        reservation</a></li>
+                                <li><a href="http://www.caucasustravel.com/services.html#dining">dining</a></li>
+
+                                <li><a href="http://www.caucasustravel.com/services.html#vip-concierge"
+                                        class="active">vip &
+                                        concierge </a></li>
+                                <li><a href="http://www.caucasustravel.com/services.html#day-tours">day
+                                        tours</a>
+                                </li>
+                                <li><a href="http://www.caucasustravel.com/services.html#guides">guides /
+                                        enterpreters</a></li>
+
+                                <div class="virtual-tours">
+                                    <h2><a href="./virtual-tours.html">VIDEOS & COMPILATIONS</a> </h2>
+                                    <!-- <div>
+                                        live <span class="text-bold" style="margin-left: 5px;">VT</span>
+                                    </div> -->
+                                    <!-- <div>
+                                        downloadable <span class="text-bold" style="margin-left: 10px;">VT</span>
+                                    </div> -->
+
+                                </div>
+
+
+                            </ul>
+                            <div class="bordered">
+                                <span><a target="_blank"
+                                        href="https://www.freeprivacypolicy.com/live/d5b78578-815e-4165-9c58-bf74b8b11ed7">PRIVACY</a>
+                                </span> <span><a target="_blank"
+                                        href="https://www.freeprivacypolicy.com/live/e6c9b7b3-b5a2-4678-8eee-1a6acb415f6d">TERMS</a>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex flex-column">
+
+                            <ul>
+                                <img src="./assets/images/CT_L_LOGO_W_T_WWW.png" alt="" style="margin-bottom: 15px;">
+                                <li style="font-size: 20px;margin-bottom: 45px;">
+                                    <a href="http://www.caucasustravel.com/">caucasustravel.com </a> <br /> <a
+                                        href="https://caucasusluxury.travel">caucasusluxury.travel</a>
+                                </li>
+                                <li>
+                                    <h2 style="margin-bottom: 0;">contact</h2>
+                                </li>
+
+                                <li>
+                                    Phone: +995 322 987400 <br />
+                                    <span style="margin-left: 57px;"> +995 322 931175</span>
+
+                                </li>
+                                <li style="margin-bottom: 10px;margin-top: 10px;">
+                                    Office hours: <br />
+                                    Mon - Fri 10:00 - 18:00
+                                </li>
+                                <li>
+                                    22, Peritsvaleba Street, <br />
+                                    0103, Tbilisi, Georgia
+
+                                </li>
+
+                            </ul>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/CaucasusTravel1991" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="./assets/images/footer-facebook.png" alt="">
+                                </a>
+                                <a href="https://www.instagram.com/caucasustravel_since1991/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/images/footer-instagram.png" alt="">
+                                </a>
+                                <a href="https://www.linkedin.com/in/caucasus-travel-578b6350/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/images/footer-linkedin.png" alt="">
+                                </a>
+                            </div>
+                            <div class="contacted"
+                                onclick="window.location.href='http://www.caucasustravel.com/contact.html'"
+                                style="cursor: pointer;">
+                                <button>CONTACT US</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="banner banner--lg banner--gold">
+                <p>Culture, Nature, Adventure, and more… since 1991</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer End  -->
+</body>
+
+<script>
+    // Get all checkboxes with the class "single-checkbox"
+    const checkboxes = document.querySelectorAll('.single-checkbox');
+    const checkboxes1 = document.querySelectorAll('.single-checkbox1');
+    // Add a click event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes.forEach(cb => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+    checkboxes1.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes1.forEach(cb => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+</script>
+<script>
+    /*
+    const submit = document.querySelector('.submitter button')
+    const popup = document.querySelector('.textarea-popup div')
+    const textarea = document.querySelector('.textarea-popup textarea')
+    submit.addEventListener('click', function(){
+
+        popup.classList.toggle('d-none')
+        textarea.disabled = 'true'
+    }) */
+</script>
+
+</html>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdVmfAoAAAAALxFsVrCevS7Bw3gKakFm3jwyC9R"></script>
+
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+</script>
+
+
+<script>
+    function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function () {
+            grecaptcha.execute('reCAPTCHA_site_key', { action: 'submit' }).then(function (token) {
+                // Add your logic to submit to your backend server here.
+            });
+        });
+    }
+</script>
+
+
+
+<script>
+
+    $('input[name="person"]').change(function () {
+        console.log(this)
+        if (this.value == 1) {
+            $('.position,.company').hide();
+        } else if (this.value == 2) {
+            $('.position,.company').show();
+        }
+    });
+
+
+</script>

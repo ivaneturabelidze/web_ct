@@ -1,0 +1,394 @@
+.tour-card {
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 5px solid #A28951;
+    }
+
+    &--services {
+        &:first-child {
+            padding-top: 30px;
+            border-top: 5px solid #A28951;
+        }
+
+        &:last-child {
+            padding-bottom: 30px;
+            border-bottom: 5px solid #A28951;
+        }
+
+        .tour-card-action {
+            margin-top: auto;
+        }
+    }
+
+    &.active {
+        .tour-card-action {
+            &__btn {
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__text {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__displayed {
+        display: grid;
+        grid-template-columns: 518px 1fr;
+        gap: 30px;
+    }
+
+    &__image {
+        position: relative;
+
+        &--w-shadow {
+            box-shadow: 8px 8px 14px rgba(0, 0, 0, .5);
+        }
+
+        &--hoverable {
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                box-shadow: 8px 8px 14px rgba(0, 0, 0, .5);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        inset: 5px 15px;
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+
+        &--bottom {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &--black {
+            color: #000;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -1px;
+        color: #000;
+
+        p+p {
+            margin-top: 5px;
+        }
+
+        &--fz-sm {
+            font-size: 16px;
+            line-height: 20px;
+
+            p+p {
+                margin-top: 10px;
+            }
+        }
+
+        &--services {
+            font-weight: 400;
+
+            h2 {
+                margin-bottom: 12px;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__details {
+        height: 0;
+        transition: height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    &__headings,
+    &__chart {
+        display: grid;
+        grid-template-columns: 518px 67px 146px 517px;
+        gap: 30px;
+    }
+
+    &__headings {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 14px;
+
+        &>*:last-child {
+            color: #1F7431;
+            transform: translateX(-30px);
+        }
+    }
+
+    &__charts {
+        display: grid;
+        gap: 15px;
+    }
+
+    &__chart {
+
+        .popular-seasons-chart {
+            margin: 0;
+        }
+
+        .months {
+            gap: 10px;
+        }
+
+        .month {
+            width: 34px;
+            height: 34px;
+            font-size: 10px;
+        }
+    }
+
+    &__details-title {
+        padding: 4px 14px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #E0E4EB;
+        border-radius: 4px;
+    }
+
+    &__duration {
+        background-color: #E0E4EB;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        display: grid;
+        place-content: center;
+    }
+
+    &__details-tagline {
+        margin-top: 4px;
+        padding-left: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #B14F52;
+    }
+
+    &__countries {
+        display: flex;
+        gap: 13px;
+
+        &>* {
+            width: 40px;
+            height: 34px;
+            border: 2px solid #707070;
+            border-radius: 2px;
+            display: grid;
+            place-content: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    &__check-dates {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #ED7D31;
+    }
+
+    &__additional-info-text {
+        margin-top: 26px;
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 30px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            letter-spacing: -1px;
+            font-weight: 600;
+            color: #AC0008;
+        }
+
+        .tour-card-contact {
+            margin-top: 0;
+        }
+    }
+
+    &__description-with-images {
+        display: flex;
+        gap: 10px;
+
+        &>div:last-child {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            figure {
+                img {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    &__services-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        strong {
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            letter-spacing: -1px;
+            font-weight: 600;
+        }
+    }
+}
+
+.tour-card-action {
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    background: transparent;
+    border: none;
+
+    &>* {
+        pointer-events: none;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -1px;
+        color: #AC0008;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &__btn {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-content: center;
+        border-radius: 5px;
+        background-color: #AC0008;
+        color: #fff;
+
+        i {
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+}
+
+.tour-card-contact {
+    margin-left: auto;
+    width: 244px;
+    height: 49px;
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #A28951;
+    border: none;
+    border-radius: 6px;
+}
+
+.image-grid {
+    margin-block: 30px 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .span-2 {
+        grid-column: span 2;
+    }
+
+    .span-5 {
+        grid-column: span 5;
+    }
+}
+
+.articles-grid {
+    margin-block: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+    row-gap: 12px;
+}
+
+.projects-article {
+    &__image {
+        margin-bottom: 12px;
+        width: 100%;
+        height: 150px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        line-height: 19px;
+    }
+
+    &__title {
+        margin-bottom: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #AC0008;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Chromatica Black";
+  src: url("../fonts/Chromatica\ Black.otf");
+  src: url("../fonts/Chromatica\ Black.otf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Chromatica\ Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chromatica Medium";
+  src: url("../fonts/Chromatica\ Medium.otf");
+  src: url("../fonts/Chromatica\ Medium.otf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Chromatica\ Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG ExtraSquare Mtavruli";
+  src: url("../fonts/bpg_extrasquare_mtavruli_2009.ttf");
+  src: url("../fonts/bpg_extrasquare_mtavruli_2009.ttf")
+      format("embedded-opentype"),
+    url("../fonts/bpg_extrasquare_mtavruli_2009.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+
+

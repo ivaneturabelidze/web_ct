@@ -1,0 +1,3092 @@
+.d-block {
+    display: block;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.d-none {
+    display: none;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+/* .burger-button {
+    display: none;
+} */
+
+
+.shepherd {
+    position: relative;
+}
+
+.shepherd--text {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 100%;
+
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font10 {
+    font-size: 10px;
+}
+
+.shepherd--text p {
+    color: white;
+    font-size: 12px !important;
+
+    margin-bottom: 3px !important;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 16px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .abouted marquee {
+        display: none;
+    }
+
+    .image-grid__mobile {
+        display: none;
+    }
+
+    .mobile-page-heading {
+        display: none;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    .d-lg-none {
+        display: none;
+    }
+
+    .d-lg-block {
+        display: block;
+    }
+
+    .d-lg-flex {
+        display: flex;
+    }
+
+    .mobile-tour-card__details {
+        display: none;
+    }
+
+    .page-title__mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /*
+    html {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    html::before {
+        position: fixed;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999999999;
+        background-image: url('./assets/images/mobiled.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } */
+    /* .site-menu .menu-item:nth-child(n+6) {
+        display: none;
+    } */
+
+    .site-menu .menu-item:nth-child(8) {
+        display: block;
+    }
+
+    .site-menu .menu-item:last-child {
+        display: block;
+    }
+
+    .container {
+        width: min(100% - 40px, 1340px);
+    }
+
+    .welcome .container {
+        width: min(100% - 10px, 1340px);
+    }
+
+    .site-logo img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    section.from.homer .georgia p {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    section.from .georgia {
+        height: 225px;
+        background-position: center;
+    }
+
+    .join__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .swiper-container2 .titler {
+        width: calc(100% - 40px);
+        text-align: right;
+    }
+
+
+    .language-switcher {
+        display: none;
+    }
+
+
+
+    .site-header-wrapper {
+        justify-content: space-between;
+    }
+
+    .site-header {
+        position: fixed !important;
+        border-bottom: 3px solid white;
+
+    }
+
+    body {
+        padding-top: 72px;
+    }
+
+    .site-navigation {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: black;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+
+    .site-menu {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0;
+        padding-bottom: 20px;
+        border-top: 2px solid white;
+        padding-top: 20px;
+    }
+
+    header .site-menu .menu-item {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    header .site-menu .menu-item a {
+        justify-content: center;
+    }
+
+
+    .dropdown__content {
+        transition: all 0.4s ease;
+        position: static !important;
+    }
+
+    header .site-menu .dropdown__content li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .luxury-logo-wrapper {
+        display: none;
+    }
+
+    .languages {
+        display: none;
+    }
+
+    section.welcome h1 {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .join__us>.container>.d-flex {
+        flex-direction: column;
+    }
+
+    .join__us h1 {
+        font-size: 24px;
+    }
+
+    section.welcome {
+        height: 470px;
+        background-position: center;
+    }
+
+    .banner--lg {
+        height: 27px;
+        font-size: 15px;
+    }
+
+    .swiper-container2 {
+        display: none;
+    }
+
+    .join__grid {
+        display: none;
+    }
+
+    .from {
+        display: none;
+    }
+
+    .joinus__partners {
+        display: none;
+    }
+
+    .visit__us {
+        display: none;
+    }
+
+    #experience .banner.banner--red {
+        display: none;
+    }
+
+    #experiences.section__in__view .banner--lg {
+        display: none;
+    }
+
+    #experience .page-title {
+        display: none;
+    }
+
+    #experience .page-description span {
+        text-align: center;
+        display: block;
+    }
+
+    #experience .page-description span:last-child {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    #experience .page-description span:nth-child(2) {
+        display: none;
+    }
+
+    #experience .page-description {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    #experience .page-description .text-bold {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #experience-page .page-heading .page-description span {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    #experience-page .banner:nth-child(2) p {
+        width: min(100% - 40px, 1340px);
+        margin-inline: auto;
+    }
+
+    #experience-page .experiences-grid .card:nth-child(n+16) {
+        display: block;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .card.card--more {
+        display: none;
+    }
+
+    .card-preview-image {
+        display: none;
+    }
+
+    .card-hovered {
+        opacity: 1;
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .experiences-grid .card:nth-child(n + 16) {
+        display: none;
+    }
+
+    .experiences-grid.more .card:nth-child(n + 16) {
+        display: block;
+    }
+
+    .card.twice--text,
+    .card--more {
+        display: none !important;
+    }
+
+
+    section.join__us:first-of-type {
+        display: none;
+    }
+
+    section.join__us.d-lg-none {
+        margin-bottom: 20px;
+    }
+
+    section.join__us.d-lg-none p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    section.join__us.d-lg-none .shepherd {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        gap: 20px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: none;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+
+    section.join__us.d-lg-none .shepherd img {
+        width: 174px;
+        height: 100%;
+    }
+
+    section.join__us.d-lg-none .shepherd--text {
+        position: static;
+
+    }
+
+    section.join__us.d-lg-none .shepherd--text p {
+        color: black;
+        text-align: right;
+        font-style: italic;
+    }
+
+    section.join__us.d-lg-none .mistral {
+        font-family: 'mistral';
+        color: #254E7C;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .banner {
+        height: 35px;
+        font-size: 14px;
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+        margin-block: 20px;
+    }
+
+    .banner a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .experiences-grid {
+        margin-bottom: 10px;
+        row-gap: 25px;
+    }
+
+
+
+
+
+
+    /* home */
+    .burger-button {
+        display: block;
+    }
+
+    .from {
+        display: unset;
+    }
+
+    .swiper-container2 {
+        display: block;
+    }
+
+    section.from.homer .georgia p {
+        text-align: right;
+        font-size: 26px;
+    }
+
+    .swiper-container2 .titler {
+        font-size: 12px;
+        bottom: 40px;
+    }
+
+    .join__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .announcements p,
+    .virtual__tours p:first-of-type {
+        display: none;
+
+    }
+
+
+
+    .announcements h2,
+    .virtual__tours h2 {
+        font-size: 14px;
+    }
+
+    .home--toured {
+        flex-wrap: wrap;
+        height: auto;
+        padding-block: 7px;
+        position: relative;
+    }
+
+    .home--toured::after {
+        position: absolute;
+        content: '';
+
+        width: 10px;
+        height: 100%;
+        left: calc(50% - 5px);
+        top: 0;
+        background-color: white;
+    }
+
+    .home--toured a {
+        flex: 1;
+        flex-basis: 40%;
+
+    }
+
+    .home--toured a span {
+        color: black;
+    }
+
+    .home--toured a:nth-child(3) {
+        order: 3;
+    }
+
+    .home--toured a:nth-child(2),
+    .home--toured a:nth-child(3) {
+        padding-left: 10px;
+    }
+
+    .news__board__item .font15 {
+        font-size: 13px;
+    }
+
+    .news__board__item .font14 {
+        font-size: 13px;
+    }
+
+    .news__board__item div>.font14.text-green:first-of-type {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news__board__item div span:not(.text-bold) {
+        font-size: 13px;
+    }
+
+    .news__board__container {
+        padding-right: 7px;
+        padding-left: 7px;
+        font-family: "Avenir Next Demi";
+        height: 102px !important;
+    }
+
+    .home--valuta {
+        height: 60px;
+    }
+
+    .home--valuta,
+    .home--valuta h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .home--valuta div {
+        flex-direction: column;
+    }
+
+    .virtual__tours p {
+        font-size: 12px;
+    }
+
+    .virtual__tours,
+    .announcements {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ann__virt__container {
+        height: 88px !important;
+        gap: 10px;
+    }
+
+    .join__grid>div>p.text--red {
+        text-align: center;
+    }
+
+    .join__grid>div:last-child>p.text-end {
+        text-align: center;
+        color: #ac0008;
+    }
+
+    .news__board .dropdown {
+        width: 100%;
+    }
+
+    .news__board.dropped .dropdown {
+        padding: 10px;
+    }
+
+    .news__board .dropdown .swiper-slide div p {
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    /* html#home-page #experiences {
+        display: none;
+    } */
+
+    .home-mobile {
+        margin-top: 15px;
+    }
+
+    .meet--us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #E3E3E3;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .meet--us p {
+        text-align: center;
+    }
+
+    .mobile--title {
+        font-size: 24px;
+        text-align: center;
+        font-family: "Avenir Next Demi";
+        color: #AC0008;
+    }
+
+    .mobile--title__small {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .home-mobile {
+        font-size: 14px;
+    }
+
+    .swiper-container3 {
+        max-width: 100%;
+        margin-block: 10px;
+    }
+
+    .country--color__georgia {
+        background-color: #E2C1B4;
+    }
+
+    .country--color__armenia {
+        background-color: #E5D3A3;
+    }
+
+    .country--color__azerbaijan {
+        background-color: #BFCAB9;
+    }
+
+    .mobile--country__header {
+        height: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px 15px 0 10px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .mobile--country__header p {
+        font-family: "Avenir Next Medium";
+        font-size: 13px;
+    }
+
+    .mobile--country__header h2 {
+        font-size: 14px;
+    }
+
+    .moible--country__item {
+        width: calc(50% - 5px);
+        font-size: 11px;
+    }
+
+    .moible--country__item .img-wrapper {
+        position: relative;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+    .moible--country__item .img-wrapper {
+        width: 100%;
+
+    }
+
+    .moible--country__item h3 {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-family: "Avenir Next Bold";
+    }
+
+    .moible--country__container>.gap-10 {
+        row-gap: 17px;
+    }
+
+
+    .mobile--country__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Avenir Next Demi";
+        color: black;
+        margin-top: 20px;
+        text-decoration: none;
+        height: 31px;
+        padding-inline: 5px;
+    }
+
+    .mobile--country__footer.d-none {
+        display: none;
+    }
+
+    .moible--country__container {
+        margin-bottom: 20px;
+    }
+
+    .moible--country__container:not(.dropped) .moible--country__item:not(:nth-child(-n+4)) {
+        display: none;
+    }
+
+    .moible--country__item p {
+        font-family: "Avenir Next Regular";
+        font-size: 12px;
+    }
+
+    .countried__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .countried__item h1 {
+        transform: unset;
+        right: 20px;
+        top: 10px;
+        font-size: 24px;
+    }
+
+    .banner {
+        font-size: 14px;
+    }
+
+    .banner.banner--red {
+        height: auto;
+        padding-block: 5px;
+    }
+
+    .footer--mobile--black {
+        background-color: #828282;
+        padding-block: 10px;
+        margin-top: 15px;
+    }
+
+    .catalogue--text {
+        font-family: "Helvetica neue Bold";
+        font-size: 17px;
+        text-align: center;
+        color: white;
+    }
+
+    .mobile--flags {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .mobile--flags a {
+        line-height: 0;
+        box-shadow: 0 3px 6px #000000;
+    }
+
+    .mobile--flags a img {
+        height: 100%;
+    }
+
+    .general--info__buttons {
+        display: flex;
+        gap: 13px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .general--info__buttons button {
+        flex: 1;
+        height: 30px;
+        font-family: "Avenir Next Bold";
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .general--info__countryContainer {
+        height: 0;
+        overflow: hidden;
+
+        transition: all 0.4s ease;
+    }
+
+    .general--info__countryContainer .country {
+        display: none;
+        width: min(100% - 40px, 1340px);
+        margin-inline: auto;
+    }
+
+    .general--info__countryContainer .country.dropped {
+        display: block;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+
+
+    /* tour-types.html start */
+    .page-heading {
+        margin-top: 10px;
+    }
+
+    .page-title {
+        font-size: 20px !important;
+        line-height: 28px;
+        font-family: "Avenir Next Bold";
+        margin-bottom: 10px;
+    }
+
+    .page-description {
+        font-size: 14px;
+    }
+
+    .tour-card:not(.tour-card--services) .tour-card__details>div:first-child {
+        display: none;
+    }
+
+    /* .tour-card__details > div:first-child {
+        display: none;
+    } */
+
+
+    .tour-card__charts {
+        display: none;
+    }
+
+    .mobile-tour-card__details--text {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-tour-card__details--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 22px;
+        background-color: #E0E4EB;
+        padding-inline: 10px;
+    }
+
+    .mobile-tour-card__details--title h3 {
+        font-size: 13px;
+        font-family: "Avenir Next Bold";
+
+    }
+
+    .mobile-tour-card__details--title p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-tour-card__details--title p span:first-child {
+        font-family: "Avenir Next Regular";
+        font-size: 9px;
+        margin-top: 2px;
+    }
+
+    .mobile-tour-card__details--title p span:last-child {
+        font-family: "Avenir Next LT Pro Bold";
+        font-size: 14px;
+
+    }
+
+    .mobile-tour-card__details--item {
+        display: block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-tour-card__details--name {
+        padding-left: 10px;
+        color: #B14F52;
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 3px;
+        margin-bottom: 5px;
+        font-family: "Avenir Next Medium";
+    }
+
+    .mobile-tour-card__details--months {
+        display: flex;
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    .mobile-tour-card__details--months--months {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 4px;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .mobile-tour-card__details--months--countries {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 3px;
+        margin: 0;
+    }
+
+    .mobile-tour-card__details--months--months li {
+        width: auto;
+        height: 20px;
+        font-size: 12px;
+        font-family: "Avenir Next Bold";
+        display: grid;
+        place-items: center;
+        flex: 1;
+    }
+
+    .mobile-tour-card__details--months--countries li {
+        width: 22px;
+        height: 20px;
+        border: 2px solid #707070;
+        font-size: 10px;
+        font-family: "Avenir Next Bold";
+        display: grid;
+        place-items: center;
+    }
+
+
+
+    #tour-types-page .container:nth-child(2) .banner:first-child {
+        padding-inline: 5px;
+        background-color: transparent;
+        box-shadow: none;
+        color: #AC0008;
+        font-family: "Avenir Next Demi";
+    }
+
+    .mobile-tour-card__details>p.text-red {
+        font-size: 12px;
+        font-style: italic;
+    }
+
+
+
+    /* tour-types.html end */
+    .d-small-none {
+        display: none;
+    }
+
+    .font14 {
+        font-size: 14px;
+    }
+
+    .font13 {
+        font-size: 13px;
+    }
+
+    a.banner {
+        text-decoration: none;
+    }
+
+    .tour-container {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .tour-card__displayed {
+        grid-template-columns: 1fr 82px;
+        gap: 10px;
+    }
+
+    .tour-card__title {
+        font-size: 18px;
+        inset: 10px 13px;
+    }
+
+    .tour-card__displayed>.tour-card__description>p {
+        display: none;
+    }
+
+    #shore-excursions .tour-card__displayed>.tour-card__description div {
+        display: none;
+    }
+
+    .tour-card-action {
+        flex-direction: column;
+        min-width: 70px;
+        gap: 5px;
+        /* align-items: center; */
+    }
+
+    .tour-card:not(:last-child) {
+        padding-bottom: 0;
+        border: none;
+    }
+
+    .tour-card:not(:last-child),
+    #shore-excursions {
+        padding-top: 15px;
+        border-top: 2px solid #A28951 !important;
+    }
+
+    .tour-card__description {
+        justify-content: flex-end;
+
+    }
+
+    .tour-card-action__text {
+        font-size: 14px;
+
+    }
+
+    .tour-card-action__btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .tour-card-action__btn i {
+        font-size: 14px;
+    }
+
+    .tour-card__chart .months {
+        gap: 4px;
+    }
+
+    .tour-card__chart .month {
+        width: 17px;
+        height: 22px;
+    }
+
+    .tour-card__details-title {
+        font-size: 14px;
+        margin-top: 35px;
+    }
+
+    .container:last-child .tour-container:last-child {
+        padding-bottom: 30px;
+    }
+
+    .tour-card__details-tagline {
+        font-size: 11px;
+        font-style: italic;
+    }
+
+    .tour-card__chart {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .tour-details {
+        display: none;
+    }
+
+    .tour-card__headings {
+        display: none;
+    }
+
+    .d-sm-flex {
+        display: flex !important;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .home-slider--top {
+        font-size: 20px;
+        font-family: "Avenir Next Bold";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+
+    .home-slider--bottom {
+        font-size: 40px;
+        font-family: "Avenir Next Bold";
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+
+
+
+    section.from .georgia {
+        background-image: url('../images/mobile-images/home-mobile-slider/1.svg');
+
+    }
+
+    section.from .georgia.georgia1 {
+        background-image: url('../images/mobile-images/home-mobile-slider/2.svg');
+    }
+
+    section.from .georgia.georgia20 {
+        background-image: url('../images/mobile-images/home-mobile-slider/3.svg');
+    }
+
+    section.from .georgia.georgia21 {
+        background-image: url('../images/mobile-images/home-mobile-slider/18.svg');
+    }
+
+    section.from .georgia.georgia12 {
+        background-image: url('../images/mobile-images/home-mobile-slider/5.svg');
+    }
+
+    section.from .georgia.georgia13 {
+        background-image: url('../images/mobile-images/home-mobile-slider/17.svg');
+    }
+
+    section.from .georgia.georgia22 {
+        background-image: url('../images/mobile-images/home-mobile-slider/15.svg');
+    }
+
+    section.from .georgia.georgia23 {
+        background-image: url('../images/mobile-images/home-mobile-slider/10.svg');
+    }
+
+    section.from .georgia.georgia14 {
+        background-image: url('../images/mobile-images/home-mobile-slider/batumi.svg');
+    }
+
+    section.from .georgia.georgia15 {
+        background-image: url('../images/mobile-images/home-mobile-slider/19.svg');
+    }
+
+    section.from .georgia.georgia24 {
+        background-image: url('../images/mobile-images/home-mobile-slider/11.svg');
+    }
+
+    section.from .georgia.georgia25 {
+        background-image: url('../images/mobile-images/home-mobile-slider/9.svg');
+    }
+
+
+
+
+
+
+
+
+    /* inner tours */
+    article.tour .page-heading {
+        display: none;
+    }
+
+    .tour-columns>div:last-child {
+        display: none;
+    }
+
+    .tour-columns {
+        display: block;
+    }
+
+    .tour-agenda li {
+        grid-template-columns: 50px auto !important;
+        gap: 10px;
+    }
+
+    .tour-agenda .tour-day {
+        font-size: 14px;
+    }
+
+    .tour-agenda li p {
+        font-size: 14px;
+        font-family: "Avenir Next Regular";
+    }
+
+    article.tour .tour-description {
+        font-size: 12px;
+        font-family: "Avenir Next Medium";
+        font-weight: unset;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+    .mobile-page-heading-tour-type {
+        padding-left: 20px;
+        width: 215px;
+        background-image: linear-gradient(to left, #FFFFFF, #C00000);
+        /* font-size: 15px; */
+        font-size: 12px;
+        font-family: "Avenir Next Bold";
+        color: white;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin-left: -20px;
+    }
+
+    .mobile-page-heading-country {
+        font-size: 12px;
+        font-family: "Avenir Next Regular";
+    }
+
+    .mobile-page-heading-title {
+        font-size: 20px;
+        font-family: "Avenir Next Bold";
+        margin-top: 11px;
+    }
+
+    .mobile-page-heading-undertitle {
+        font-size: 14px;
+        font-family: "Avenir Next Medium";
+        color: #AC0008;
+        margin-bottom: 10px;
+    }
+
+    .request-tour {
+        gap: 15px;
+        margin-bottom: 12px;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+
+    .download-tour-info-button {
+        flex-direction: column;
+        max-width: unset;
+        width: 68px;
+
+        gap: 10px;
+    }
+
+    .download-tour-info-button span {
+        font-size: 10px;
+    }
+
+    .request-tour-button {
+        padding: 0;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        font-size: 18px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .id-and-button-container {
+        flex-grow: 1;
+    }
+
+    .tour-id {
+        font-size: 14px !important;
+        font-weight: unset !important;
+        font-family: "Avenir Next Demi";
+    }
+
+    .mobile-tour-slider {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    .mobile-tour-slider p,
+    .mobile-tour-slider h3 {
+        font-family: "Avenir Next Demi";
+        font-size: 10px !important;
+        text-shadow: 2px 2px 4px black;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-tour-slider img {
+        width: 100%;
+        height: 196px;
+        object-fit: cover;
+    }
+
+    .mobile-tour-sticky {
+        margin-bottom: 20px;
+        z-index: 5;
+    }
+
+    .mobile-tour-card__details--months--heading {
+        display: grid;
+        grid-template-columns: 1fr 72px;
+        gap: 8px;
+        margin-top: 17px;
+    }
+
+    .mobile-tour-card__details--months--heading p:first-child {
+        text-align: center;
+        color: #1F7431;
+        font-size: 11px;
+        font-family: "Avenir Next Demi";
+    }
+
+    .mobile-tour-card__details--months--heading p:last-child {
+        text-align: center;
+        font-family: "Avenir Next Regular";
+        font-size: 11px;
+        font-family: "Avenir Next Demi";
+    }
+
+    .chars-container table td {
+        display: flex;
+        align-items: center;
+        height: 26px;
+    }
+
+    .chars-container table td:first-child {
+        border: none;
+    }
+
+    .tour-tech-characteristics {
+        margin-top: 10px;
+    }
+
+    .tour-tech-characteristics h3 {
+        margin-bottom: 7px;
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .chars-container table tr:nth-child(2n) {
+        background-color: #FFD7BC;
+    }
+
+    .chars-container table tr td:nth-child(2n) {
+        background-color: #FFF1E8;
+    }
+
+    .chars-container table td div {
+        font-size: 11px;
+        padding-right: 20px;
+    }
+
+    .tour-additional-info {
+        background-color: unset;
+        margin-top: 8px;
+    }
+
+    .chars-container .adapted {
+        width: 100%;
+        justify-content: unset;
+        gap: 10px;
+    }
+
+    .adopted--answer {
+        margin-left: auto;
+    }
+
+    .adapted img {
+        width: 12px;
+        height: 17px;
+    }
+
+    .tour-column-left>.request-tour,
+    .tour-column-left>.switch-tour {
+        display: none;
+    }
+
+    .switch-tour-prev,
+    .switch-tour-next {
+        width: 40px;
+
+        font-size: 14px;
+    }
+
+    .switch-tour {
+        margin-top: 12px;
+    }
+
+    .switch-tour>* {
+        border-width: 2px;
+        height: 40px;
+    }
+
+    .switch-tour p {
+        width: calc(100% - 90px);
+        font-size: 16px;
+
+    }
+
+    .switch-tour {
+        gap: 5px;
+    }
+
+    .download-tour-info-button img {
+        height: 42px;
+        width: 33px;
+    }
+
+    .tour-builder p {
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .tour-agenda li:hover .tour-day,
+    .tour-agenda li:hover p strong,
+    .tour-agenda li:focus .tour-day,
+    .tour-agenda li:focus p strong {
+        color: black;
+    }
+
+    .tour-card__check-dates {
+        font-size: 13px;
+        flex-grow: 1;
+    }
+
+
+
+
+
+    .scrollable-image,
+    .scrollable-imagee {
+        display: none !important;
+    }
+
+    .scroll-component>.image-banner>.col:last-child {
+        display: none;
+    }
+
+    .scroll-component .image-banner .col {
+        width: 100%;
+    }
+
+    .scroll-component {
+        width: min(100% - 40px, 1340px);
+        margin-inline: auto;
+    }
+
+    .scroll-component .left-texts {
+        margin: 0 !important;
+    }
+
+    .scroll-component .left-texts p {
+        font-size: 14px;
+    }
+
+    .country--country--container .swiper-slide {
+        position: relative;
+    }
+
+    .country--country--container p {
+        position: absolute;
+        width: calc(100% - 40px);
+        text-align: left;
+        bottom: 12px;
+        color: white;
+        font-family: "Avenir Next Bold";
+        font-size: 12px;
+        margin-inline: 20px;
+    }
+
+    .country--country--container h3 {
+        position: absolute;
+        font-family: "Avenir Next Bold";
+        font-size: 26px;
+        width: calc(100% - 40px);
+        margin-inline: 20px;
+        text-align: right;
+        top: 15px;
+        color: white;
+    }
+
+    figure.country__name {
+        display: none;
+    }
+
+    .scroll-component .left-texts .left-texts__spacer br {
+        display: none;
+    }
+
+    .scroll-component .left-texts__spacer p+p {
+        margin-top: 10px;
+    }
+
+    .scroll-component .left-texts__spacer {
+        margin-top: 10px;
+    }
+
+    .scroll-component .left-texts>.text-center.text-bold {
+        font-size: 14px !important;
+    }
+
+    .scroll-component .left-texts>.text-center:nth-child(2) p {
+        font-size: 16px !important;
+    }
+
+    .scroll-component .left-texts__spacer {
+        margin-bottom: 5px;
+    }
+
+    .scroll-component .left-texts>div.features-title.text-center.text-bold {
+        font-size: 24px !important;
+        margin-top: 0;
+
+    }
+
+    .features {
+        margin-block: 30px;
+        row-gap: 20px;
+    }
+
+    .feature {
+        display: block;
+    }
+
+    .feature__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .feature__left {
+        padding: 7px 15px;
+        gap: 10px;
+    }
+
+    .feature__left div p {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 0;
+    }
+
+    .feature .w-shadow img {
+        width: 65px;
+        height: 95px;
+    }
+
+    .feature__left,
+    .feature__right {
+        height: auto;
+    }
+
+    .features .feature__right {
+        padding: 7px 15px;
+        font-size: 12px;
+        line-height: 14px;
+        display: block;
+    }
+
+    .features .feature__right p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .features .feature__right div p {
+        padding: 0;
+    }
+
+    .features .feature__right img {
+        display: none;
+    }
+
+    .scroll-component .container {
+        width: 100%;
+    }
+
+    .feature .image-with-caption {
+        display: none;
+    }
+
+    .two-images img:first-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 55px;
+        width: 25px;
+        height: 25px;
+        z-index: 5555;
+    }
+
+    .feature .two-images {
+        padding: 0;
+
+    }
+
+    .feature__right div .avenir-med {
+        display: none;
+    }
+
+    .cuisine {
+        padding: 20px 15px;
+    }
+
+    .cuisine-texts>p {
+        display: none;
+    }
+
+    .cuisine-wrap {
+        display: block;
+    }
+
+    .dish__image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .dish__name {
+        display: none;
+    }
+
+    .dish__description {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .dish {
+        gap: 15px;
+    }
+
+    .dishes {
+        gap: 20px;
+    }
+
+    .cuisine .cuisine__title {
+        display: none;
+    }
+
+    .cuisine__title {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .cuisine__additionaltext {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .cuisine__additionaltext.cuisine-texts__red {
+        margin-top: 15px;
+        line-height: 16px;
+    }
+
+    .welcome-inside {
+        gap: 15px;
+    }
+
+    .welcome-inside div {
+        font-size: 12px;
+        font-family: "Helvetica Neue";
+        line-height: 14px;
+    }
+
+    .welcome-inside div img {
+        width: 33px;
+        height: 33px;
+    }
+
+    .welcome-inside>img {
+        width: 131px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .cuisine-texts {
+        margin: 0;
+    }
+
+    .welcome-to-georgia__texts {
+        margin-top: 30px;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.6px;
+        font-family: "Helvetica neue Bold";
+    }
+
+    .banner--lg.new__banner {
+        font-size: 14px;
+        line-height: 18px;
+        margin-block: 20px;
+    }
+
+    .tourism__credits {
+        display: none;
+    }
+
+    .country--full {
+        width: 100%;
+        padding: 10px 36px;
+        margin-bottom: 20px;
+    }
+
+    .country--full h3 {
+        font-size: 30px;
+        margin-bottom: 13px;
+    }
+
+    .menu-item.withDropdown::after {
+        position: absolute;
+        content: '\f107';
+        /* Unicode for Font Awesome's angle-down */
+        font-family: 'Font Awesome 5 Free';
+        /* Replace with the actual Font Awesome font family */
+        font-weight: 900;
+        color: white;
+        right: 20px;
+        top: 2px;
+        transition: all 0.3s ease;
+
+    }
+
+    .menu-item.withDropdown.inner--dropped::after {
+        transform: rotate(180deg);
+    }
+
+
+
+
+
+
+    .real__contact>.container>.d-flex {
+        flex-direction: column;
+    }
+
+    .input-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .input-container:nth-child(1) {
+        flex-direction: column-reverse;
+    }
+
+    .input-container:nth-child(1) .radio-buttons {
+        flex-direction: column;
+    }
+
+    .inputAlike,
+    .input-container input[type="text"] {
+        width: 100%;
+    }
+
+    .input-container .radio-buttons {
+        margin-right: 0;
+    }
+
+    .submitter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submitter button {
+        width: 100%;
+    }
+
+    .real__contact iframe {
+        width: 100% !important;
+    }
+
+    .real__contact--right {
+        margin-top: 0 !important;
+        flex-direction: column;
+    }
+
+    .real__contact .page-title,
+    .real__contact h2 {
+        font-size: 16px !important;
+        line-height: 18px;
+        margin-top: 5px;
+    }
+
+    .neccessary--fields {
+        font-size: 15px;
+    }
+
+
+
+    .bottom__container {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+    }
+
+    .bottom__container a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .bottom__container ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .bottom__container ul *:not(img) {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .bottom__container .socials {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .bottom__container ul h2 {
+        text-transform: uppercase;
+        margin-block: 5px !important;
+    }
+
+    .bottom__container button {
+        height: 55px;
+        width: 100%;
+        background-color: #A28951;
+        color: white;
+        font-weight: 30px;
+        font-family: "Avenir Next LT Pro";
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0;
+        border: 0;
+    }
+
+    .real__contact--request .inputAlike {
+        margin-left: 10px;
+    }
+
+    .input-container:nth-child(2) {
+        margin-block: 0;
+    }
+
+    .real__contact--request .input-container:nth-child(2) {
+        flex-direction: column-reverse;
+        gap: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .real__contact--request .radio-buttons.gap-30 {
+        gap: 13px !important;
+        flex-direction: column;
+    }
+
+    .real__contact--request .input-container {
+        gap: 13px;
+    }
+
+    .real__contact--request .banner {
+        height: auto;
+        padding: 5px 7px;
+    }
+
+    .input-container#company {
+        margin-block: 13px;
+    }
+
+    .tour__request--chart {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tour__name--name {
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+        font-size: 16px;
+    }
+
+    .real__contact .month {
+        height: 22px;
+    }
+
+    .request--period .greened {
+        position: static;
+        margin-top: 5px;
+    }
+
+    .request--period .months {
+        gap: 5px;
+    }
+
+    .accomodation-row {
+        flex-direction: column;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between {
+        flex-direction: column;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between .gap30 {
+        gap: 10px !important;
+    }
+
+    .accomodation-row>div {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notes input {
+        width: 100%;
+    }
+
+    .accomodation-row1 {
+        flex-direction: column;
+    }
+
+    .accomodation-row1>div {
+        width: 100% !important;
+    }
+
+    .includes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .real__contact--request .banner {
+        margin-block: 20px;
+    }
+
+    .tour__name--name {
+        font-size: 14px;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between>.d-flex {
+        width: 100% !important;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .visitors select,
+    .description select {
+        width: 100%;
+        height: 40px;
+    }
+
+    .description,
+    .visitors {
+        font-size: 15px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    /* .accomodation-row, .accomodation-row1{
+        gap: 20px;
+    } */
+    .notes {
+        width: 100%;
+    }
+
+    .tour__name--container>p {
+        font-size: 15px;
+    }
+
+    .accomodation-row>div:last-child>.d-flex {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .accomodation-row1 .checkboxes .flex-column {
+        justify-content: center;
+    }
+
+    .accomodation-row1 .checkboxes .flex-column input {
+        width: 30px;
+        height: 30px;
+    }
+
+    .accomodation-row1 .checkboxes {
+        gap: 10px;
+    }
+
+    .real__contact--request .font18,
+    .real__contact--request .font18>p,
+    .real__contact--request .font18 p,
+    .real__contact--request .font18>*,
+    .real__contact--request .font18 * {
+        font-size: 15px;
+    }
+
+    .font20 {
+        font-size: 16px;
+    }
+
+    .accomodation-row1>div:last-child {
+        flex-direction: column;
+    }
+
+    .includes>div>.d-flex:first-child {
+        margin-bottom: 20px !important;
+    }
+
+    .includes div:first-child input {
+        flex-shrink: 0;
+        width: 35px !important;
+    }
+
+    .includes>div>.d-flex {
+        gap: 10px !important;
+    }
+
+    .includes>div:nth-child(2) {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .real__contact--request .banner--red {
+        font-size: 16px !important;
+    }
+
+    .real__contact--request .submitter {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    /* about-us.html */
+    .abouted .container:nth-child(2) .page-title {
+        font-size: 19px !important;
+    }
+
+    .abouted .banner.banner--gold.page-heading {
+        height: auto;
+        display: none;
+    }
+
+
+    .contact--header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .abouted .contact--content .flexed:first-child {
+        flex-direction: column-reverse;
+        margin-bottom: 12px;
+    }
+
+    .abouted .contact--content .flexed:first-child>.flex-shrink-0 {
+        display: none;
+    }
+
+    .abouted .contact--content .flexed:first-child .d-lg-none p {
+        font-size: 10px;
+        line-height: 1;
+        font-style: italic;
+    }
+
+    .contact--content>div:not(:first-child) img {
+        display: none;
+    }
+
+    .contact--content .flexed:not(:first-child).font18 {
+        border-bottom: 0;
+    }
+
+    .contact--content h3:last-child {
+        display: none;
+    }
+
+    .contact--content .flexed {
+        flex-direction: column;
+
+    }
+
+    .contact--content .flexed .text-red {
+        display: block;
+        color: white;
+        background-color: #AC0008;
+        padding-block: 5px;
+        font-size: 14px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact--content .flexed.font18 .flex-column {
+        display: none;
+    }
+
+    .contact--content .flexed {
+        margin-bottom: 5px;
+    }
+
+    .about-us--different {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        display: none;
+    }
+
+    .about-us--different p {
+        display: none;
+    }
+
+    .contact--content .flexed .position-relative {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact--content .flexed .position-relative img {
+        margin-left: auto;
+    }
+
+    .contact--content .flexed .position-relative .saba-kiknadze-text {
+        margin-right: auto;
+        position: static;
+        transform: none;
+        text-align: left;
+        margin-top: auto;
+    }
+
+    .contact--content .flexed:not(:first-child) .flex-column,
+    .contact--content .flexed:not(:first-child) img {
+        width: 100%;
+    }
+
+    .contact--content .flexed:not(:first-child).font18 {
+        padding-bottom: 10px;
+
+    }
+
+    .contact--content .flexed.font18 * {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .abouted .gap32 {
+        flex-direction: column;
+    }
+
+    .team--grid {
+        margin-block: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+
+    .team--grid>article>p {
+        display: none;
+    }
+
+    .team--grid>article figure .text-greeny {
+        display: none;
+    }
+
+    .team--grid>article figure>p:first-child {
+        font-family: "Avenir Next Demi";
+    }
+
+    .team--grid>article figure>p:last-child {
+        font-family: "Avenir Next Regular";
+    }
+
+    .team--grid--header p {
+        display: block !important;
+    }
+
+    .team--grid>article figure>p {
+        font-size: 10px;
+    }
+
+    .team--grid--header {
+        gap: 3px !important;
+
+        grid-column: span 3;
+        flex-direction: row !important;
+        font-size: 16px !important;
+
+    }
+
+    .team--grid--header>p {
+        font-size: 14px !important;
+    }
+
+    .team--grid>article:first-child {
+        display: none;
+    }
+
+    .abouted .d-flex.gap32 {
+        font-size: 12px;
+    }
+
+
+
+    .team--grid {
+        row-gap: 12px;
+    }
+
+    .about__us-img-wrapper {
+        height: auto;
+    }
+
+    .about__us-img-wrapper img {
+        width: 100%;
+    }
+
+
+
+    .about__us--photo--grid img {
+        width: 100%;
+        opacity: 0.73;
+    }
+
+    .about__us--photo--grid img:nth-child(4) {
+        display: none;
+    }
+
+    .about__us--photo--grid img:nth-child(20) {
+        display: none;
+    }
+
+
+    .about__us--photo--grid img:nth-child(1) {
+        order: -10;
+    }
+
+    .about__us--photo--grid img:nth-child(2) {
+        order: -8;
+    }
+
+    .about__us--photo--grid img:nth-child(3) {
+        order: -9;
+    }
+
+    .about__us--photo--grid img:nth-child(5) {
+        order: -6;
+    }
+
+    .about__us--photo--grid img:nth-child(6) {
+        order: -7;
+    }
+
+    .team-bottom-header {
+        font-size: 16px;
+    }
+
+    .contact--content .flexed img {
+        width: 100%;
+    }
+
+    .contact--content>.flexed:nth-child(2)>div:nth-child(2) {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .contact--content>.flexed:nth-child(4)>div:nth-child(1) {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .abouted>div>.container:nth-child(10) .flexed {
+        flex-direction: column;
+    }
+
+    .abouted>div>.container:nth-child(10) .flexed .flexed>img {
+        width: 100%;
+    }
+
+    .about-us--different+.d-lg-none {
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .commitment--blockhead__mobile {
+        font-size: 14px;
+        line-height: 18px;
+        border: 2px solid #A28951;
+        padding: 3px 5px;
+        font-family: "Avenir Next Bold";
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #commitments-sponsorship {
+        font-size: 18px !important;
+    }
+
+    .about-us--mobile--commitments {
+        font-size: 12px;
+        font-family: "Avenir Next Regular";
+
+    }
+
+
+
+
+
+    main:not(.main--servicePage) .tour-card__description--services>div>p {
+        display: none;
+    }
+
+    .tour-card__description--services h2 {
+        line-height: 1.1;
+        font-size: 12px;
+    }
+
+    #air-tickets .tour-card__displayed,
+    #meet-and-greet .tour-card__displayed,
+    #transportation .tour-card__displayed,
+    #guides .tour-card__displayed {
+        grid-template-columns: 1fr;
+    }
+
+    .services-hero {
+        padding-block: 0;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        height: auto;
+        min-height: auto;
+
+    }
+
+    .services-hero::before {
+        width: 100%;
+        z-index: -2;
+        background-image: url("../images/services-hero-mobile.svg");
+    }
+
+    .services-hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.30);
+        z-index: -1;
+    }
+
+    .services-hero__description p {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .services-hero__description {
+        gap: 15px;
+        padding-inline: 10px;
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 50px !important;
+    }
+
+    .services-hero .container {
+        margin-top: 0;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .services-list a {
+        font-size: 13px;
+        letter-spacing: -1px;
+        height: 30px;
+    }
+
+    .services-hero__heading {
+        font-size: 24px;
+        margin-bottom: 125px;
+    }
+
+    /* .tour-card__description-with-images{
+        flex-direction: column;
+    } */
+    /* .tour-card--services .tour-card__displayed{
+        grid-template-columns: 1fr;
+    } */
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tour-card__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .tour-card__footer .tour-card-contact {
+        margin-inline: auto;
+        width: 82px;
+        font-size: 14px;
+        height: 28px;
+    }
+
+    .tour-card__footer p {
+        font-size: 12px;
+    }
+
+    .tour-card__additional-info-text {
+        font-size: 15px;
+        line-height: 1.1;
+    }
+
+    .service-tours-item {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 12px;
+        position: relative;
+    }
+
+    .service-tours-container {
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-tours-item img {
+        max-height: unset;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: calc(100% - 135px);
+        height: 135px;
+    }
+
+
+
+    .banner--services {
+        height: auto;
+        padding: 5px 2px;
+    }
+
+    .tour-card__description p {
+        font-size: 15px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    main.main--micePage .page-heading.page-heading--w-margin-bottom>p {
+        font-size: 14px;
+    }
+
+    /* .image-grid .span-2{
+        grid-column: unset;
+    } */
+    .image-grid .span-5 {
+        grid-column: span 2;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-block: 15px;
+        gap: 10px;
+    }
+
+    .projects-article__image {
+        height: auto;
+    }
+
+    article:not(.withoutDetails) .tour-card__description--services div>div {
+        display: none;
+    }
+
+    .mice-description-mobile {
+        font-size: 12px;
+        margin-top: 10px;
+        font-family: "Avenir Next Medium";
+    }
+
+    .main--micePage .image-grid {
+        display: none;
+    }
+
+    .image-grid__mobile {
+        display: grid !important;
+
+    }
+
+    .projects-article__body {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .projects-article__title {
+        margin-bottom: 3px;
+    }
+
+    .main--micePage .banner--services.banner--gold {
+        font-size: 12px;
+        background-color: transparent;
+        color: #A28951;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    /* .partners__wrapper {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partners__wrapper>figure:first-child {
+        margin-right: 0;
+    } */
+    /* .main--micePage .partners__wrapper figure:nth-child(2),
+    .main--micePage .partners__wrapper figure:nth-child(3),
+    .main--micePage .partners__wrapper figure:nth-child(5) {
+        display: none;
+    }
+
+    .main--micePage .partners__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+
+    } */
+    .partners__wrapper figure:nth-child(2),
+    .partners__wrapper figure:nth-child(3),
+    .partners__wrapper figure:nth-child(5) {
+        display: none;
+    }
+
+    .partners__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .partners {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .main--servicePage article:not(.withoutDetails) .tour-card__description--services>div {
+        display: none;
+    }
+
+    .main--servicePage .page-heading {
+        display: none;
+    }
+
+    .services-hero {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .services-hero .page-title {
+        color: white;
+        margin-top: 20px;
+    }
+
+    .withoutDetails .tour-card__description--services h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .withoutDetails .tour-card__description--services p {
+        font-size: 12px;
+        letter-spacing: unset;
+    }
+
+    .withoutDetails .tour-card__description {
+        letter-spacing: unset;
+    }
+
+    .tour-card__description-with-images>div:last-child figure:last-child img {
+        width: 95px;
+    }
+
+    .tour-card__description-with-images>div:last-child figure:first-child img {
+        width: 55px;
+    }
+
+    .tour-card__description-with-images>div:last-child {
+        gap: 20px;
+    }
+
+    .tour-card__services-action {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .tour-card-contact {
+        margin-inline: auto;
+        width: 82px;
+        font-size: 14px;
+        height: 28px;
+    }
+
+    .tour-card__services-action strong {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: unset;
+        font-family: unset;
+
+    }
+
+    .main--servicePage .tour-card-contact {
+        margin-top: 5px;
+    }
+
+    .main--servicePage .tour-card__additional-info-text {
+        display: none;
+    }
+
+    .service-tours-item h2 {
+        font-size: 18px;
+        font-family: "Avenir Next Bold";
+        height: 135px;
+        width: 125px;
+        margin-bottom: 8px;
+        line-height: 30px;
+    }
+
+    .main--servicePage .partners__wrapper figure:nth-child(3) {
+        display: block;
+        margin-right: -35px;
+    }
+
+    .about__us--photo--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .abouted marquee {
+        height: 27px;
+        background-color: #9E8959;
+        display: grid;
+        place-items: center;
+        margin-block: 20px;
+    }
+
+    .abouted marquee ul {
+        font-size: 12px;
+        gap: 30px;
+        display: flex;
+        font-family: "Avenir Next Demi";
+        color: white;
+        margin: 0;
+    }
+
+    .about-us--mobile--commitments--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-block: 10px;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+
+    .about-us--mobile--commitments--block {
+        margin-bottom: 15px;
+    }
+
+    .about-us--mobile--commitments--footer {
+        font-size: 14px !important;
+    }
+
+    .affiliatons--bordered {
+        display: grid;
+        grid-template-areas:
+            "top top top top top"
+            "left left  right right right"
+            "bottom bottom bottom bottom bottom";
+        border-width: 5px;
+    }
+
+    .affiliatons--bordered>.float--left {
+        grid-area: left;
+        width: 120px !important;
+        margin-left: 5px !important;
+        float: unset !important;
+        height: 100%;
+        object-fit: unset;
+
+    }
+
+    .affiliatons--bordered #georgian-hospitality-group {
+        grid-area: top;
+        font-size: 17px !important;
+    }
+
+    .affiliatons--bordered .text-center {
+        grid-area: right;
+        font-size: 11px;
+        margin-right: 5px;
+        margin-left: 10px;
+
+    }
+
+    .affiliatons--bordered .text-center .avenir-bold {
+        font-family: inherit !important;
+    }
+
+    .affiliatons--bordered .footer-like {
+        grid-area: bottom;
+        padding: 15px 8px;
+        flex-wrap: wrap;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(1) {
+        order: 1;
+        margin-bottom: auto;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(2) {
+        order: 2;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(3) {
+        order: 5;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(4) {
+        order: 3;
+        margin-bottom: auto;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(5) {
+        order: 4;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(6) {
+        order: 6;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(7) {
+        order: 7;
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(1) img {
+        width: 105px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(2) img {
+        width: 55px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(3) img {
+        width: 95px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(4) img {
+        width: 95px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(5) img {
+        width: 100px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(6) img {
+        width: 40px;
+
+    }
+
+    .affiliatons--bordered .footer-like a:nth-child(7) img {
+        width: 30px;
+
+    }
+
+    .affiliatons {
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+    /* redesigning tour-requests(for mobile) */
+
+    .real__contact--request .radio-buttons.gap-30 {
+        flex-direction: row;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .real__contact--request .inputAlike {
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+
+    .real__contact input[type="checkbox"] {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .radio-buttons div span {
+        width: 36px;
+        height: 36px;
+    }
+
+    .inputAlike sup {
+        vertical-align: middle;
+        padding-bottom: 5px;
+    }
+
+    .real__contact--request .input-container {
+        position: relative;
+        gap: 10px;
+    }
+
+    .input-container input[type="text"] {
+        height: 36px;
+    }
+
+    .real__contact--request .input-container .radio-buttons {
+        gap: 10px;
+    }
+
+    .real__contact--request .name {
+        width: calc(100% - 92px);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .real__contact--request .input-container:nth-child(3) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .real__contact--request .input-container:nth-child(3)>div:not(:first-child):not(:nth-child(2)) {
+        width: 100%;
+    }
+
+    .real__contact--request .country-email,
+    .real__contact--request .phone {
+        width: calc(50% - 7px) !important;
+    }
+
+    .real__contact--request .banner.banner--green {
+        background-color: #AC0008;
+    }
+
+    .real__contact--request .banner--red {
+        background-color: #FC781E;
+    }
+
+    .tour__name--container>p {
+        font-size: 16px;
+    }
+
+    .tour__name--name {
+        font-size: 18px;
+    }
+
+    .request--day,
+    .request--countries {
+        flex-direction: row;
+        font-size: 14px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .request--countries div,
+    .request--day div {
+        width: 80px;
+    }
+
+    .request--period p {
+        font-size: 14px;
+    }
+
+    .request--period>div:first-of-type {
+        gap: 5px;
+    }
+
+    .request--period input[type="checkbox"] {
+        width: 100% !important;
+        height: 25px !important;
+    }
+
+    .request--period .months {
+        margin-top: 5px;
+    }
+
+    .request--period .greened {
+        font-size: 9px;
+    }
+
+    .real__contact .month {
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between {
+        flex-direction: column-reverse;
+    }
+
+    .tour__request--chart {
+        margin-bottom: 20px;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between .text-center {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .real__contact--request form>div>.d-flex.justify-between>.d-flex {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .description {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .accomodation-row .mt-10 {
+        margin-top: 5px;
+    }
+
+    .accomodation-row,
+    .accomodation-row1{
+        position: relative;
+    }
+
+    .accomodation-row>div:last-child>.d-flex {
+        position: absolute;
+        top: 51px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        color: #AC0008;
+
+    }
+    .accomodation-row1 > div:last-child > .d-flex{
+        position: absolute;
+        top: 48px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        color: #AC0008;
+    }
+    .accomodation-row1 > div{
+        flex-direction: column;
+    }
+    .accomodation-row1 > div .mt-10{
+        margin-top: 5px;
+    }
+    .checkboxes .font18{
+        font-size: 16px;
+    }
+
+    .checkboxes {
+        width: 75%;
+        gap: 20px;
+
+    }
+
+    .checkboxes>div {
+        width: 40px;
+    }
+
+    .accomodation-row input[type="checkbox"],
+    .accomodation-row1 input[type="checkbox"] {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .notes input{
+        height: 92px;
+        background-color: #F7F5EF;
+    }
+
+    .includes .d-flex input[type="checkbox"]{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .includes .align-right{
+        text-align: left;
+        font-size: 14px;
+        position: absolute;
+        top: 65px;
+    }
+    .includes > div:nth-child(2){
+        position: static;
+    }
+    .includes{
+        position: relative;
+    }
+    .includes > div:first-child > .d-flex:first-child{
+        padding-bottom: 120px;
+    }
+    .includes input[type="text"]{
+        height: 78px;
+        background-color: #F3F5DE;
+    }
+
+
+
+    .submitter button {
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 370px) {
+    .news__board__container {
+        height: 120px !important;
+    }
+
+    .news__board .dropdown .swiper-slide div p {
+        -webkit-line-clamp: 4;
+    }
+
+    .news__board .dropdown h3 {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .news__board .dropdown h3 {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .mobile-page-heading .big--header {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .request--period p {
+        font-size: 13px;
+    }
+
+    .includes > div:first-child > .d-flex:first-child{
+        padding-bottom: 140px;
+    }
+
+
+
+
+
+
+
+
+
+}

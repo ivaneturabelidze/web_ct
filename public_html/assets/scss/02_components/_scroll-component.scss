@@ -1,0 +1,115 @@
+.scroll-component {
+    position: relative;
+    width: 100%;
+
+    .image-banner {
+        display: flex;
+
+        .col {
+            width: 50%;
+        }
+    }
+
+    .left-image,
+    .right-image {
+        height: 440px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .left-image {
+        background-image: url("../images/Tbilisi Pano LEFT.png");
+        background-position: top right;
+    }
+
+    .right-image {
+        background-image: url("../images/Tbilisi Pano RIGHT.png");
+        background-position: top left;
+    }
+
+    .right-image {
+        z-index: 111;
+
+        img {
+            background: linear-gradient(to bottom, #fff 90%, hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0.3));
+        }
+
+
+    }
+
+    .right-texts {
+        margin-right: calc((100% - 388px) / 2);
+
+        p {
+            margin-top: 32px;
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #AC0008;
+
+            &+p {
+                margin-top: 8px;
+            }
+
+        }
+    }
+
+    .left-texts {
+        margin-left: calc((100% - 388px) / 2);
+        margin-right: 30px;
+
+        &__spacer {
+            margin-top: 32px;
+            margin-bottom: 12px;
+
+            p+p {
+                margin-top: 8px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}
+
+.scrollable-image {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    width: 50%;
+
+    img {
+        width: 100%;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    div {
+        margin-top: 472px;
+        margin-right: calc((100% - 388px) / 2);
+
+        p {
+            margin-top: 32px;
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #AC0008;
+
+            &+p {
+                margin-top: 8px;
+            }
+
+        }
+    }
+}
+
+.image-sources {
+    display: none;
+}

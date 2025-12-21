@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 120 80">
+      <image width="120" height="80" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQAgMAAACv9VkaAAAACVBMVEUAI5XtKTn///+i/AH+AAAAJElEQVRIx+3JIQEAAAgDsJekJClxr4DZ7JLamorWWmuttf7tA2gGHQ7IRW44AAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <rect id="Flag_FR" data-name="Flag FR" width="31" height="21" fill="url(#pattern)"/>
+</svg>

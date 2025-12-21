@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 120 80">
+      <image width="120" height="80" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQBAMAAAAgtay6AAAAMFBMVEW8AC3////ADjjNQ2TdfJP45OjlnK378PLGJUz++fnhjaHUXHnwx9HtucXab4jIL1TAlVJwAAABNklEQVRYw+3XMWoCQRgF4McqRhEjg1mDkkIIQYsU0TaNqVKl0Cqk0htIsBYRcgDbdCks0gk5QXKEkAN4BI9gJaj7Qt74Y0CY13+w7M78/1s4QxBwwAEfCa78fEwatw/TffBTCwCAy5k/HmGd6N4XD2v4W/+C4zE2ku144W9s5doHl7GTvgfu7eKMji+QyKeMu0l8peLzZRIXpyI+A8mdiLsM10W8YDit4ZhZRB0Jlylm54TgEsdNCQ84zkm4x3FBwm2O0xKec5yX8A3HKQmPOc5KuMZxdHhsemzTCzN9qgXHp5bjmbFcjJPDX0nTMOBjCNoY4ndSHIDu2TJ6qwy/ibhCDmhKXTfuMYlfDCs20lesabnbaoX7MhQaF2/t96JflXKvmyXu/T/ro6242ipz+EEJOOBjwytHUiOO6EU25wAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <rect id="Flag_JP" data-name="Flag JP" width="31" height="21" fill="url(#pattern)"/>
+</svg>

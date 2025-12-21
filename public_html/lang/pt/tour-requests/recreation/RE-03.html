@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Tour Request</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS -->
+    <script src="../../assets/js/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js" defer></script>
+    <script src="../../assets/js/script.js" defer></script>
+
+
+
+    <style>
+        .align-right {
+            text-align: right;
+        }
+
+        .errorinput {
+            border: 1px solid #FF2929 !important;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header bg-black">
+        <div class="container">
+            <div class="site-header-wrapper">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="../../joinUs.html">
+                        <img src="../../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Main Menu -->
+                <nav class="site-navigation" role="main navigation">
+                    <ul class="site-menu">
+
+                        <li class="menu-item">
+                            <a class="menu-link joinus " href="../../joinUs.html">JOIN US </a>
+
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link  home" onclick="scrollToElement('home')" style="cursor: pointer;"
+                                href="./home.html">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link experiences" href="../../experiences.html">EXPERIENCES</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link dmc" href="../../DMC.html"> <b> DMC</b> - SOUTH CAUCASUS</a>
+                            <div class="dropdown__content" style="min-width: 165px;">
+                                <ul>
+                                    <li> <a href="./georgia.html">georgia</a> </li>
+                                    <li><a href="./armenia.html">armenia</a></li>
+                                    <li><a href="./azerbaijan.html">azerbaijan</a></li>
+                                    <li><a href="./combined-tours.html">COMBINED
+                                            TOURS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link tour-types active" href="../../tour-types.html">TOURS</a>
+                            <div class="dropdown__content" style="min-width: 260px;">
+                                <ul>
+                                    <li> <a href="./tour-types.html">LIST OF THE TOURS
+                                            BY TYPE</a> </li>
+                                    <li><a
+                                            href="./tour-types-inner/culture.html">CULTURE</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/interest.html">SPECIAL
+                                            INTEREST</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/nature.html">NATURE</a>
+                                    </li>
+                                    <li><a
+                                            href="./tour-types-inner/adventure.html">ADVENTURE</a>
+                                    </li>
+                                    <li><a
+                                            href="./tour-types-inner/gourmet.html">GOURMET</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/city.html">CITY
+                                            BREAK</a></li>
+                                    <li><a
+                                            href="./tour-types-inner/recreation.html">RECREATION</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/sport.html">SPORT
+                                            & LEISURE</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/shore.html">SHORE
+                                            EXCURSIONS</a>
+                                    </li>
+                                    <li><a href="./tour-types-inner/guaranteed.html">GURANTEED
+                                            DEPARTURE
+                                            TOURS</a></li>
+                                    <li><a href="./services.html#day-tours"> DAY TOURS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link incentive" href="../../mice.html">INCENTIVES & EVENTS</a>
+                            <div class="dropdown__content" style="min-width: 165px;">
+                                <ul>
+                                    <li> <a href="./mice.html#incentives">incentives</a>
+                                    </li>
+                                    <li><a href="./mice.html#events">events</a></li>
+                                    <li><a href="./mice.html#projects">SPECIAL
+                                            PROJECTS</a></li>
+                                    <li><a href="./mice.html#meetings">conferences</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link services" href="../../services.html">SERVICES</a>
+                            <div class="dropdown__content" style="min-width: 210px;">
+                                <ul>
+                                    <li> <a href="./services.html#air-tickets">air
+                                            ticketing (iata)</a> </li>
+                                    <li><a href="./services.html#hotel-reservation">hotel
+                                            reservation</a></li>
+                                    <li><a href="./services.html#meet-and-greet">meet &
+                                            greet</a></li>
+
+                                    <li><a
+                                            href="./services.html#transportation">transportation</a>
+                                    </li>
+                                    <li><a href="./services.html#guides">guides /
+                                            enterpreters</a></li>
+                                    <li><a href="./services.html#day-tours">day
+                                            trips</a>
+                                    </li>
+                                    <li><a href="./services.html#dining">dining</a></li>
+
+                                    <li><a href="./services.html#vip-concierge">vip &
+                                            concierge</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../../about-us.html">ABOUT US</a>
+                            <div class="dropdown__content" style="min-width: 270px;">
+                                <ul>
+                                    <li><a href="./about-us.html#little-of-history">little
+                                            bit
+                                            of history</a>
+                                    </li>
+                                    <li> <a href="./about-us.html#our-team">our team</a>
+                                    </li>
+
+                                    <li><a href="./about-us.html#network-partnership">partnership
+                                            & network</a></li>
+                                    <li><a href="./about-us.html#liabilities-insurance">liabilities
+                                            &
+                                            insurance</a></li>
+                                    <li><a href="./about-us.html#commitments-sponsorship">commitments
+                                            &
+                                            sponsorship</a></li>
+                                    <li><a href="./about-us.html#awards-media">awards &
+                                            media</a></li>
+                                    <li><a
+                                            href="./about-us.html#affiliations">affiliations</a>
+                                    </li>
+                                    <li><a
+                                            href="./about-us.html#georgian-hospitality-group">Georgian
+                                            hospitality
+                                            group</a></li>
+                                    <li><a href="./about-us.html#meet-us">meet us on
+                                            travel trade
+                                            fairs</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../../contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Main Menu End -->
+
+                <!-- Language Switcher -->
+                <div class="language-switcher" role="language switcher">
+                    <a href="#" class="language-switcher-item active" aria-value="English">
+                        <img src="../../assets/images/GB.png" alt="">
+                    </a>
+                </div>
+                <!-- Language Switcher End -->
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Main -->
+    <main>
+        <div class="real__contact real__contact--request">
+
+            <div class="container">
+
+                <h1 class="page-title">
+                    THANK YOU FOR THE REQUEST
+                </h1>
+                <h2>
+                    Please fill fields bellow
+                </h2>
+                <form action="">
+                    <div>
+                        <div id="warning"></div>
+                        <div class="input-container">
+
+
+                            <div class="radio-buttons gap-30">
+                                <div>
+                                    <div>
+                                        <input type="checkbox" name="person" value="2" class="single-checkbox">
+                                        <span></span>
+                                    </div>
+                                    <div class="inputAlike inputAlike--company">
+                                        Travel Company, or Corporate <sup> *</sup>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="checkbox" name="person" value="1" class="single-checkbox">
+                                        <span></span>
+                                    </div>
+                                    <div class="inputAlike inputAlike--privatePerson">
+                                        Private Person <sup> *</sup>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <p class="neccessary--fields">
+                                * Necessary fields
+                            </p>
+
+                        </div>
+                        <div class="input-container">
+                            <div class="radio-buttons">
+
+                                <label for="">MR
+                                    <div>
+                                        <input type="checkbox" name="gender" value="1" class="single-checkbox1">
+                                        <span></span>
+                                    </div>
+
+                                </label>
+                                <label for="">MRS
+                                    <div>
+                                        <input type="checkbox" name="gender" value="2" class="single-checkbox1">
+                                        <span></span>
+                                    </div>
+
+                                </label>
+                            </div>
+                            <div class="name">
+                                <label for="name">
+                                    Name <span>*</span>
+                                </label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="surname">
+                                <label for="surname">
+                                    Surname <span>*</span>
+                                </label>
+                                <input type="text" name="surname" id="surname">
+                            </div>
+                            <div class="email">
+                                <label for="email">
+                                    E-mail <span>*</span>
+                                </label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="country-email">
+                                <label for="country">
+                                    Country <span>*</span>
+                                </label>
+                                <input type="text" name="country" id="country">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">
+                                    Phone
+                                </label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="input-container" id="company">
+                            <div class="company">
+                                <label for="">
+                                    Company Name <span>*</span>
+                                </label>
+                                <input type="text" name="company" id="">
+                            </div>
+                            <div class="position">
+                                <label for="position">
+                                    Position <span>*</span>
+                                </label>
+                                <input type="text" name="position" id="">
+                            </div>
+                        </div>
+                        <h2 class="banner banner--green">
+                            I would like to receive offer and price/s, for the selected tour, regarding preferences and
+                            parameters noted below
+                        </h2>
+                        <div class="tour__request--chart">
+                            <div class="tour__name--container">
+                                <p>
+                                    <span>TOUR NAME</span>
+                                    <span>Code: RE-03</span>
+                                </p>
+                                <div class="tour__name--name">
+                                    Fun and Joy at Black Sea Coast
+                                </div>
+                            </div>
+                            <input type="hidden" name="tourname" value="Fun and Joy at Black Sea Coast">
+                            <input type="hidden" name="code" value="RE-03">
+                            <div class="d-flex gap25 align-items-start">
+                                <div class="request--day">
+                                    <span>DAYS</span>
+                                    <div>8</div>
+                                </div>
+                                <div class="request--countries">
+                                    <span>COUNTRIES</span>
+                                    <div>GE</div>
+                                </div>
+
+                            </div>
+                            <div class="request--period">
+                                <p>PLEASE SELECT Approximate PERIOD of Visit *</p>
+                                <div>
+                                    <input type="checkbox" name="month[]" value="1">
+                                    <input type="checkbox" name="month[]" value="2">
+                                    <input type="checkbox" name="month[]" value="3">
+                                    <input type="checkbox" name="month[]" value="4">
+                                    <input type="checkbox" name="month[]" value="5">
+                                    <input type="checkbox" name="month[]" value="6">
+                                    <input type="checkbox" name="month[]" value="7">
+                                    <input type="checkbox" name="month[]" value="8">
+                                    <input type="checkbox" name="month[]" value="9">
+                                    <input type="checkbox" name="month[]" value="10">
+                                    <input type="checkbox" name="month[]" value="11">
+                                    <input type="checkbox" name="month[]" value="12">
+
+                                </div>
+                                <ul class="months">
+                                    <li class="month populatiry-low">Jan</li>
+                                    <li class="month populatiry-low">Feb</li>
+                                    <li class="month populatiry-low">Mar</li>
+                                    <li class="month populatiry-low">Apr</li>
+                                    <li class="month populatiry-medium">May</li>
+                                    <li class="month populatiry-high">Jun</li>
+                                    <li class="month populatiry-high">Jul</li>
+                                    <li class="month populatiry-high">Aug</li>
+                                    <li class="month populatiry-high">Sep</li>
+                                    <li class="month populatiry-medium">Oct</li>
+                                    <li class="month populatiry-low">Nov</li>
+                                    <li class="month populatiry-low">Dec</li>
+                                </ul>
+                                <p class="greened">Recommended Period For The Tour (Greener - The Better)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-between">
+                            <div class="d-flex justify-between" style="width: 580px;">
+                                <div class="visitors">
+                                    <p>TOTAL NUMBER OF VISITORS *</p>
+                                    <select name="visitor_count" id="visitorCount">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3" selected>3</option>
+                                        <option value="4-6"> 4 - 6</option>
+                                        <option value="7-10">7 -10</option>
+                                        <option value="11-17">11-17</option>
+                                        <option value="18-25">18-25</option>
+                                        <option value="26-40">26-40</option>
+                                        <option value="more">More...</option>
+                                    </select>
+                                    <input type="number" id="customVisitorCount" style="display: none"
+                                        placeholder="Enter number">
+                                </div>
+                                <div class="description">
+                                    <p>DESCRIPTION</p>
+                                    <select name="description" id="">
+                                        <option value="Individual">Individual</option>
+                                        <option value="Individuals">Individuals</option>
+                                        <option value="Couple">Couple</option>
+                                        <option value="Couples">Couples</option>
+                                        <option value="Family" selected>Family</option>
+                                        <option value="Families">Families</option>
+                                        <option value="Group">Group</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-center font18 avenir-demi">
+                                    <span class=" text--red">EXACT DATE OF ARRIVAL</span>
+                                    <span class="avenir-med">(Select, IF AVAILABLE)</span>
+                                </p>
+                                <div class="d-flex gap30 mt-10 ">
+                                    <select name="day" id="" class="select-day">
+
+                                    </select>
+                                    <select name="monthone" class="select-month">
+
+                                    </select>
+                                    <select name="year" class="select-year">
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accomodation-row">
+                            <div style="width: 580px; display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="font18 avenir-bold text--red">ACCOMMODATION CATEGORY *</p>
+                                    <p class="font20 avenir-demi mt-10">I am looking for accommodation of </p>
+                                </div>
+                                <div class="checkboxes">
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font20 avenir-demi text--red">3 <sup>star</sup></span>
+                                        <input type="checkbox" name="star" value="3">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font20 avenir-demi text--red">4 <sup>star</sup></span>
+                                        <input type="checkbox" name="star" value="4">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font20 avenir-demi text--red">5 <sup>star</sup></span>
+                                        <input type="checkbox" name="star" value="5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end" style="flex-grow: 1; justify-content: space-between;">
+                                <div class="d-flex ">
+                                    <span class="font20 avenir-demi" style="margin: auto 0;margin-right: 22px;">Don’t
+                                        need</span>
+                                    <div class="boldChebkboxBorder">
+                                        <input type="checkbox" name="star" value="0">
+                                    </div>
+
+                                </div>
+                                <div class="notes">
+                                    <p>NOTES</p>
+
+                                    <input type="text" name="staraccommodation">
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accomodation-row1">
+                            <div style="width: 580px; display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="font18 avenir-bold text--red">CATERING PLAN *</p>
+                                    <p class="font20 avenir-demi mt-10">I am looking for catering plan of </p>
+                                </div>
+                                <div class="checkboxes">
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font18 avenir-demi text--red">B&B</span>
+                                        <input type="checkbox" name="plan" value="B&B">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font18 avenir-demi text--red">HB</span>
+                                        <input type="checkbox" name="plan" value="HB">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-center font18 avenir-demi text--red">FB</span>
+                                        <input type="checkbox" name="plan" value="FB">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end" style="flex-grow: 1; justify-content: space-between;">
+                                <div class="d-flex ">
+                                    <span class="font20 avenir-demi" style="margin: auto 0;margin-right: 22px;">Don’t
+                                        need</span>
+                                    <div class="boldChebkboxBorder">
+                                        <input type="checkbox" name="plan" value="0">
+                                    </div>
+
+                                </div>
+                                <div class="notes">
+                                    <p>NOTES</p>
+                                    <input type="text" name="plannote">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="includes">
+                            <div>
+                                <div class="d-flex" style="gap:20px; margin-bottom:37px;">
+                                    <input type="checkbox" name="package" value="1">
+                                    <span class="font18 avenir-bold text--red"
+                                        style="position: relative;top: -3px;">Please include all services as for full
+                                        package tour* (Recommended)
+                                    </span>
+                                </div>
+                                <div class="d-flex" style="gap:20px;">
+                                    <input type="checkbox" name="exclude" value="1">
+                                    <span class="font18 avenir-bold text--red"
+                                        style="position: relative;top: -3px;">Please exclude following services <br />
+                                        mentioned in the box >
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="font18 avenir-med align-right">
+                                    * Full Package Includes – Guide, Transportation, Accommodation of chosen category,
+                                    Catering by chosen plan, Entry tickets to Sites, other mentioned services in final
+                                    and detailed Itinerary to be provided with price quotation.
+                                </p>
+                                <input type="text" name="excludenote" class="w-100">
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+                        <h2 class="banner banner--red" style="font-size: 20px;cursor: pointer;"
+                            onclick="window.open('https://www.caucasustravel.com/services.html')">
+                            If you are looking for only couple of services for your trip - we suggest to place
+                            appropriate bookings from SERVICES page (Click here)
+                        </h2>
+                        <div class="submitter">
+                            <button type="button" onClick="sendmail();"><span>SUBMIT</span> </button>
+                        </div>
+                        <div class="textarea-popup request-popup">
+                            <div class="d-none">
+                                <p>THANK YOU FOR THE REQUEST</p>
+                                <p>We will contact you soon </p>
+                                <p>Caucasus Travel Team</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script>
+
+
+        (() => {
+            let year_satart = (new Date).getFullYear();
+            let year_end = (new Date).getFullYear() + 1;
+
+
+            let option = '';
+            option = '<option value="">Year</option>';
+
+            for (let i = year_satart; i <= year_end; i++) {
+                // let selected = (i === year_satart ? ' selected' : '');
+                let selected = '';
+                option += '<option value="' + i + '"' + selected + '>' + i + '</option>';
+            }
+
+            $('select[name="year"]').html(option);
+
+            let day_selected = (new Date).getDate();
+            let option1 = '';
+            let day = '';
+            option1 = '<option value="">Day</option>';
+
+            for (let i = 1; i < 32; i++) {
+                day = (i <= 9) ? '0' + i : i;
+                selected = '';
+                //let selected = (i === day_selected ? ' selected' : '');
+                option1 += '<option value="' + day + '"' + selected + '>' + day + '</option>';
+            }
+            $('select[name="day"]').html(option1);
+
+
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let month_selected = (new Date).getMonth(); // current month
+            let option2 = '';
+            let month_value = '';
+            option2 = '<option value="">Month</option>'; // first option
+
+            for (let i = 0; i < months.length; i++) {
+                let month_number = (i + 1);
+
+                month_value = (month_number <= 9) ? '0' + month_number : month_number;
+
+
+                //('+month_number+')
+                // let selected = (i === month_selected ? ' selected' : '');
+                let selected = '';
+                option2 += '<option value="' + months[i] + '" ' + selected + '> ' + months[i] + '</option>';
+            }
+            $('select[name="monthone"]').html(option2);
+
+        })();
+
+        function validMail(mail) {
+            return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
+        }
+
+$('input[name="person"]').change(function() {
+    if(this.value==1) {
+    $('#company').hide();
+    }else  if(this.value==2) {
+	 $('#company').show();
+	}
+});
+
+        function sendmail() {
+            $('#warning').html('');
+            var person = $('input[name="person"]:checked');
+            var gender = $('input[name="gender"]:checked');
+
+            var name = $('input[name="name"]').val();
+            var surname = $('input[name="surname"]').val();
+            var email = $('input[name="email"]').val();
+            var country = $('input[name="country"]').val();
+            var phone = $('input[name="phone"]').val();
+            var months = $('input[name="month[]"]:checked');
+            var visitor_count = $('select[name="visitor_count"]').val();
+            var description = $('select[name="description"]').val();
+            var day = $('select[name="day"]').val();
+            var monthone = $('select[name="monthone"]').val();
+            var year = $('select[name="year"]').val();
+            var star = $('input[name="star"]:checked');
+            var plan = $('input[name="plan"]:checked');
+            var package = $('input[name="package"]:checked');
+
+            var company = $('input[name="company"]').val();
+            var position = $('input[name="position"]').val();
+
+
+
+
+            if (person.length == 0) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>Private Person / Travel Company, or Corporate field is required</strong></div>');
+                return false;
+            }
+
+
+
+            if (gender.length == 0) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>MR / MRS field is required</strong></div>');
+                return false;
+            }
+
+            if (!name) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>Name field is required</strong></div>');
+                return false;
+            }
+
+            if (!surname) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>Surname field is required</strong></div>');
+                return false;
+            }
+
+            if (!email) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>E-mail field is required</strong></div>');
+                return false;
+            }
+
+            if (!validMail(email)) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>E-mail field is required</strong></div>');
+                return false;
+            }
+
+            if (!country) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>Country field is required</strong></div>');
+                return false;
+            }
+
+            if (!phone) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>Phone field is required</strong></div>');
+                return false;
+            }
+
+
+            if (person.val() == 2 && (!company || !position) ) {
+                console.log('inside')
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>COMPANY NAME and POSITION fields are required</strong></div>');
+                return false;
+            }
+
+            if (months.length == 0) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>APPROXIMATE PERIOD OF VISIT field is required</strong></div>');
+                return false;
+            }
+
+            if (!day) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>EXACT DATE OF ARRIVAL Day field is required</strong></div>');
+                return false;
+            }
+
+            if (!monthone) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>EXACT DATE OF ARRIVAL Month field is required</strong></div>');
+                return false;
+            }
+
+            if (!year) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>EXACT DATE OF ARRIVAL Year field is required</strong></div>');
+                return false;
+            }
+            if (!year) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>EXACT DATE OF ARRIVAL Year field is required</strong></div>');
+                return false;
+            }
+
+
+
+            if (star.length == 0) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>ACCOMMODATION CATEGORY field is required</strong></div>');
+                return false;
+            }
+
+            if (plan.length == 0) {
+                animate('person');
+                $('#warning').html('<div class="alert alert-danger"> <strong>CATERING PLAN field is required</strong></div>');
+                return false;
+            }
+
+
+
+
+
+            $.ajax({
+                url: 'https://www.caucasustravel.com/sendmail.php',
+                type: 'post',
+                data: $('form input[type="text"], form input[type="hidden"], form input[type="checkbox"]:checked, form select'),
+                dataType: 'json',
+                beforeSend: function () {
+                    $('.submitter button').prop("disabled", true);
+                },
+                complete: function () {
+                    $('.submitter button').prop("disabled", false);
+                },
+                success: function (json) {
+                    //console.log(json);
+                    $('form input[type="text"]').val('');
+                    $('form input[type="checkbox"]').prop('checked', false);
+                    $('form select').val('').trigger('shange');
+                    $('form select[name="visitor_count"]').val('3').trigger('shange');
+                    $('form select[name="description"]').val('Family').trigger('shange');
+                    $('.textarea-popup div').removeClass('d-none');
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                }
+            });
+
+
+
+        }
+
+        function animate(id) {
+            var nav = $('input[name="' + id + '"]');
+            if (nav.length) {
+                $("body,html").animate({
+                    scrollTop: nav.offset().top - 150
+                },
+                    200
+                );
+            }
+        }
+
+    </script>
+    <!-- Main End -->
+    <!-- Main End -->
+
+
+    <!-- Footer Start  -->
+
+    <footer class="footer">
+        <div>
+
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="bottom__container">
+                        <div>
+
+                            <ul>
+                                <h2>OUR COMPANY</h2>
+                                <li>
+                                    <a href="#">our team</a>
+                                </li>
+                                <li>
+                                    <a href="#">little of history</a>
+                                </li>
+                                <li>
+                                    <a href="#">network & partnership</a>
+                                </li>
+                                <li>
+                                    <a href="#">liabilities & insurance</a>
+                                </li>
+                                <li>
+                                    <a href="#">commitments & sponsorship</a>
+                                </li>
+                                <li>
+                                    <a href="#">awards & media</a>
+                                </li>
+                                <li>
+                                    <a href="#">affiliations</a>
+                                </li>
+                                <li>
+                                    <a href="#">Georgian hospitality group</a>
+                                </li>
+                                <li>
+                                    <a href="#">meet us on travel trade fairs</a>
+                                </li>
+                            </ul>
+                            <button>NEWS BOARD</button>
+                            <div class="cookies">
+                                <h3>Cookies</h3>
+                                <p>Privacy Notice:Our site uses cookies for advertising, analytics and to improve our
+                                    site and services. By continuing to use <br />
+                                    our site, you agree ro our use of cookies.For more information, including how to
+                                    change your settings, see our privacy policy. <a href="http://" target="_blank"
+                                        rel="noopener noreferrer">Learn more.</a> </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <h2>DMC - <span> South caucasus</span></h2>
+                            <ul>
+                                <li>
+                                    <a href="#">georgia</a>
+                                </li>
+                                <li>
+                                    <a href="#">armenia</a>
+                                </li>
+                                <li>
+                                    <a href="#">azerbaijan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">COMBINED TOURS</a>
+                                </li>
+                                <h2>tours</h2>
+                                <li>
+                                    <a href="#">culture</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPECIAL INTEREST</a>
+                                </li>
+                                <li>
+                                    <a href="#">NATURE</a>
+                                </li>
+                                <li>
+                                    <a href="#">ADVENTURE</a>
+                                </li>
+                                <li>
+                                    <a href="#">GOURMET</a>
+                                </li>
+                                <li>
+                                    <a href="#">CITY BREAK</a>
+                                </li>
+                                <li>
+                                    <a href="#">RECREATION</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPORT & LESURE</a>
+                                </li>
+                                <li>
+                                    <a href="#">SHORE EXCURSIONS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">GURANTEED DEPARTURE TOURS</a>
+                                </li>
+                            </ul>
+                            <p class="credits">ALL RIGHTS RESERVED 2023</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h2>incentives & Events</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">incentives</a>
+                                </li>
+                                <li>
+                                    <a href="#">events</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPECIAL PROJECTS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">conferences</a>
+                                </li>
+                                <h2>services</h2>
+                                <li>
+                                    <a href="#">air ticketing (iata)</a>
+                                </li>
+                                <li>
+                                    <a href="#">hotel reservation</a>
+                                </li>
+                                <li>
+                                    <a href="#">meet & greet</a>
+                                </li>
+                                <li>
+                                    <a href="#">transportation</a>
+                                </li>
+                                <li>
+                                    <a href="#">guides / enterpreters</a>
+                                </li>
+                                <li>
+                                    <a href="#">day trips</a>
+                                </li>
+                                <li>
+                                    <a href="#">dining</a>
+                                </li>
+                                <li>
+                                    <a href="#">vip & concierge</a>
+                                </li>
+
+                                <div class="virtual-tours">
+                                    <h2>VIRTUAL TOURS</h2>
+                                    <div>
+                                        live <span class="text-bold" style="margin-left: 5px;">VT</span>
+                                    </div>
+                                    <div>
+                                        downloadable <span class="text-bold" style="margin-left: 10px;">VT</span>
+                                    </div>
+
+                                </div>
+
+
+                            </ul>
+                            <div class="bordered">
+                                <span><a href="#">PRIVACY</a> </span> <span><a href="#">TERMS</a> </span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex flex-column">
+
+                            <ul>
+                                <img src="../.../assets/images/CT_L_LOGO_W_T_WWW.png" alt=""
+                                    style="margin-bottom: 15px;">
+                                <li style="font-size: 20px;margin-bottom: 45px;">
+                                    <a href="#">caucasustravel.com </a> <br /> <a href="#">caucasus.travel </a>
+                                </li>
+                                <li>
+                                    <h2 style="margin-bottom: 0;">contact</h2>
+                                </li>
+
+                                <li>
+                                    Phone: +995 322 987400 <br />
+                                    <span style="margin-left: 57px;"> +995 322 931175</span>
+
+                                </li>
+                                <li style="margin-bottom: 10px;margin-top: 10px;">
+                                    office hours: <br />
+                                    Mon - Fri 10:00 - 18:00
+                                </li>
+                                <li>
+                                    22, Peritsvaleba Street, <br />
+                                    0103, Tbilisi, Georgia
+
+                                </li>
+
+                            </ul>
+                            <div class="socials">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/images/footer-facebook.png" alt="">
+                                </a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/images/footer-instagram.png" alt="">
+                                </a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/images/footer-twitter.png" alt="">
+                                </a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/images/footer-youtube.png" alt="">
+                                </a>
+                            </div>
+                            <div class="contacted">
+                                <button>CONTACT US</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="banner banner--lg banner--gold">
+                <p>Culture, Nature, Adventure, and more… since 1991</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer End  -->
+</body>
+
+</html>
+
+<script>
+    // Get all checkboxes with the class "single-checkbox"
+    const checkboxes = document.querySelectorAll('.single-checkbox');
+
+    // Add a click event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes.forEach(cb => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+
+    const checkboxes3 = document.querySelectorAll('.single-checkbox1');
+
+    // Add a click event listener to each checkbox
+    checkboxes3.forEach(checkbox3 => {
+        checkbox3.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes3.forEach(cb3 => {
+                if (cb3 !== checkbox3) {
+                    cb3.checked = false;
+                }
+            });
+        });
+    });
+
+
+    const checkboxes1 = document.querySelectorAll('.accomodation-row input[type="checkbox"]');
+    checkboxes1.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes1.forEach(cb => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+
+    const checkboxes2 = document.querySelectorAll('.accomodation-row1 input[type="checkbox"]');
+    checkboxes2.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            // Uncheck all checkboxes
+            checkboxes2.forEach(cb => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
+    document.getElementById('visitorCount').addEventListener('change', function () {
+        var selectedValue = this.value;
+        var customVisitorCountInput = document.getElementById('customVisitorCount');
+
+        // Display the input field if the selected value is "26 or more"
+        if (selectedValue === '26-more') {
+            customVisitorCountInput.style.display = 'block';
+        } else {
+            customVisitorCountInput.style.display = 'none';
+        }
+    });
+</script>

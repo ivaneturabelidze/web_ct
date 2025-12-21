@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="20" viewBox="0 0 34 20">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 133 80">
+      <image width="133" height="80" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAABQBAMAAADFB6uTAAAAD1BMVEXdAAAAAAD/zgBKAAD0igCIH1qBAAAAPUlEQVRYw+3MMQ0AIAwAsEkABwQFJBjgwL8mROxZSCug0dNaOBwOh8NR9dhpKwDgZzftxEwbDofD4XBUPR6r93nq8Sh15QAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <rect id="Flag_DE" data-name="Flag DE" width="34" height="20" fill="url(#pattern)"/>
+</svg>

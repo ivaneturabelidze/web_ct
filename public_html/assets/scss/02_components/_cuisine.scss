@@ -1,0 +1,72 @@
+.cuisine {
+    padding: 14px 30px;
+    background-color: #BFD5F5;
+
+    &__title {
+        margin-bottom: 12px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #AC0008;
+        text-transform: capitalize;
+        letter-spacing: -1px;
+    }
+}
+
+.dishes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 16px;
+}
+
+.dish {
+    display: flex;
+    gap: 22px;
+
+    &__image {
+        width: 135px;
+        height: 135px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #AC0008;
+        text-transform: capitalize;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        line-height: 18px;
+    }
+}
+
+.cuisine-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cuisine-texts {
+    margin-left: 25px;
+    font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+
+    &__red {
+        margin-top: 35px;
+        color: #AC0008;
+    }
+}

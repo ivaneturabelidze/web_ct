@@ -1,0 +1,44 @@
+.popular-seasons-chart {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-size: 16px;
+        font-family: 'Avenir Next Demi', sans-serif;
+        font-weight: 600;
+        color: #1F7431;
+        text-transform: uppercase;
+    }
+}
+
+.months {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 3px;
+}
+
+.month {
+    width: 24px;
+    height: 24px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+    display: grid;
+    place-content: center;
+
+    &.populatiry-low {
+        background-color: #A8BBA0;
+    }
+
+    &.populatiry-medium {
+        background-color: #6E9267;
+    }
+
+    &.populatiry-high {
+        background-color: #3A7239;
+    }
+}

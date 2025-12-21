@@ -1,0 +1,929 @@
+section.welcome {
+    background-image: url('../images/newimages/kazbega.png');
+    height: 721px;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+
+.welcome.welcome1 {
+    background-image: url('../images/1-tbilisi.png');
+}
+
+.welcome.welcome11 {
+    background-image: url('../images/Ushguli_Valey.png');
+}
+
+.welcome.welcome2 {
+    background-image: url('../images/shatil-zamtari.png');
+}
+
+.welcome.welcome3 {
+    background-image: url('../images/3-truso.png');
+}
+
+.welcome.welcome4 {
+    background-image: url('../images/4-gareja.png');
+}
+
+.welcome.welcome5 {
+    background-image: url('../images/5-GREMI.png');
+}
+
+.welcome.welcome6 {
+    background-image: url('../images/6-BATUMI.png');
+}
+@media screen and (max-width: 992px){
+    section.welcome{
+        background-image: url('../images/joinus-mob/1.svg');
+    }
+    .welcome.welcome11 {
+        background-image: url('../images/joinus-mob/2.svg');
+    }
+    .welcome.welcome1 {
+        background-image: url('../images/joinus-mob/3.svg');
+    }
+    .welcome.welcome2 {
+        background-image: url('../images/joinus-mob/4.svg');
+    }
+    .welcome.welcome3 {
+        background-image: url('../images/joinus-mob/5.svg');
+    }
+    .welcome.welcome4 {
+        background-image: url('../images/joinus-mob/6.svg');
+    }
+    .welcome.welcome5 {
+        background-image: url('../images/joinus-mob/7.svg');
+    }
+    .welcome.welcome6 {
+        background-image: url('../images/joinus-mob/8.svg');
+    }
+    .welcome.welcome7 {
+        background-image: url('../images/joinus-mob/9.svg');
+    }
+}
+
+.luxury-logo-wrapper img {
+
+    width: 149px;
+    height: 149px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.53);
+}
+
+.luxury-logo-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 50px;
+}
+
+#joinUs .swiper-container6 {
+    position: relative;
+}
+
+section.welcome h1 {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 50px;
+    font-family: "Avenir Next";
+
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.gap-1 {
+    gap: 5px;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.gap-3 {
+    gap: 16px;
+}
+
+.gap30 {
+    gap: 25px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.languages {
+    display: flex;
+    color: white;
+    justify-content: end;
+    margin-bottom: 27px;
+    margin-top: 140px;
+    font-family: 'Avenir Next LT Pro';
+}
+
+.languages img {
+    cursor: pointer;
+}
+
+.join__us {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+section.join__us p {
+    font-size: 20px;
+    font-family: "Avenir Next Medium";
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.shepherd {
+    background-image: url('../images/newimages/Group 1862.png');
+    width: 381px;
+    height: 685px;
+    max-width: 100%;
+    background-size: cover;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.join__us h1 {
+    font-family: "Avenir Next Demi";
+    font-size: 40px;
+    color: #ac0008;
+    margin-bottom: 10px;
+}
+
+.join__us .content {
+    font-size: 20px;
+}
+
+.join__us .content__footer p {
+    font-family: 'mistral';
+    color: #254E7C;
+    font-size: 30px;
+
+}
+
+.join__us .content__footer {
+    font-family: 'mistral';
+    font-size: 30px;
+    margin-top: 26px;
+}
+
+section.from h1 {
+    text-align: center;
+    color: #AC0008;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Avenir Next Demi";
+}
+
+section.from .georgia {
+    background-image: url('../images/newimages/ushbb.png');
+    width: 100vw;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+section.from.homer .georgia p {
+    width: 100%;
+    text-align: right;
+    margin-left: 0 !important;
+}
+
+.swiper-container2 .titler {
+    position: absolute;
+    bottom: 55px;
+    width: min(100% - 4rem, 1340px);
+    text-align: right;
+    z-index: 5;
+    color: white;
+}
+
+section.from .georgia.georgia1 {
+    background-image: url('../images/newimages/sigh.png');
+}
+
+section.from .georgia.georgia20 {
+    background-image: url('../images/newimages/ararat1.png');
+}
+
+section.from .georgia.georgia21 {
+    background-image: url('../images/newimages/bako1.png');
+}
+
+section.from .georgia.georgia22 {
+    background-image: url('../images/newimages/bako2.png');
+}
+
+section.from .georgia.georgia23 {
+    background-image: url('../images/newimages/ararat2.png');
+}
+
+section.from .georgia.georgia24 {
+    background-image: url('../images/newimages/bako3.png');
+}
+
+section.from .georgia.georgia25 {
+    background-image: url('../images/newimages/armenianew1.png');
+}
+
+section.from .georgia.georgia26 {
+    background-image: url('../images/newimages/armenianew2.png');
+}
+
+section.from .georgia.georgia28 {
+    background-image: url('../images/newimages/azerbaijannew1.png');
+}
+
+
+section.from .georgia.georgia12 {
+    background-image: url('../images/newimages/Group 1863.png');
+}
+
+section.from .georgia.georgia13 {
+    background-image: url('../images/newimages/Group 1864.png');
+}
+
+section.from .georgia.georgia14 {
+    background-image: url('../images/newimages/Group 1865.png');
+}
+
+section.from .georgia.georgia15 {
+    background-image: url('../images/newimages/Group 1866.png');
+}
+
+
+section.from .georgia.georgia2 {
+    background-image: url('../images/newimages/Telavi_1560567872 WWWW.png');
+}
+
+section.from .georgia.georgia3 {
+    background-image: url('../images/newimages/Ushba Panorama _2207045897 WWWW.png');
+}
+
+section.from .georgia.georgia4 {
+    background-image: url('../images/newimages/Ushguli Winter_2130460589 WWWW.png');
+}
+
+section.from .georgia.georgia5 {
+    background-image: url('../images/newimages/Tusheti Omalo 3_1074928496 WWWW.png');
+}
+
+section.from .georgia.georgia6 {
+    background-image: url('../images/newimages/Uplistsikhe_402288112 WWWW.png');
+}
+
+
+
+
+
+
+
+section.from .georgia p {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-family: "Avenir Next Bold";
+    transition: all 0.4s ease;
+}
+
+.join__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.join__grid>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.important {
+    background-color: #A28951;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+    font-family: "Avenir Next Bold";
+    font-size: 24px;
+    height: 46px;
+    text-transform: uppercase;
+}
+
+.ann__virt__container {
+    display: flex;
+    gap: 8px;
+    height: 152px !important;
+
+}
+
+.announcements {
+    flex: 6;
+    background-color: #ED7D31;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.announcements p {
+    font-size: 22px;
+    font-family: "Avenir Next Demi";
+}
+
+.announcements h2 {
+    font-size: 22px;
+    font-family: "Avenir Next Bold";
+}
+
+.virtual__tours {
+    flex: 4;
+    background-color: #5D7C73;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.virtual__tours h2 {
+    font-size: 22px;
+    font-family: "Avenir Next Bold";
+}
+
+.virtual__tours p {
+    font-size: 16px;
+    font-family: "Avenir Next Demi";
+}
+
+.news__board {
+    background-color: #FFC000;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: "Avenir Next Bold";
+    font-size: 24px;
+    height: 46px;
+    text-transform: uppercase;
+}
+
+.news__board__container {
+    background-color: #B2B1B1;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 152px !important;
+    justify-content: space-between;
+}
+
+.news__board__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6;
+    color: black;
+    text-decoration: none;
+}
+
+.text-green {
+    color: #BFFA00;
+}
+
+.joinus__partners {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-family: "Avenir Next Demi";
+}
+
+.visit__us {
+    min-height: 136px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 24px;
+    background-color: #E3E3E3;
+    text-align: center;
+}
+
+.visit__us__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.visit__us__item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Avenir Next Demi";
+    text-align: left;
+}
+.visit__us__item img{
+    margin-bottom: 4px;
+    width: 100px;
+}
+.visit__us__item i.fa-location-dot{
+    margin-left: 5px;
+}
+
+#dmc p {
+    font-size: 24px;
+    font-family: "Avenir Next Medium";
+}
+
+#dmc .page-heading p {
+    font-size: 24px;
+    font-family: "Avenir Next Demi";
+}
+
+.countried__container {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.countried__item {
+    display: flex;
+    position: relative;
+}
+
+.countried__item h1 {
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    color: white;
+    font-size: 55px;
+    font-family: "Avenir Next Bold";
+    transform: translateX(-50%);
+}
+
+#dmc button {
+    margin-top: 20px;
+    width: 420px;
+    height: 55px;
+    background-color: white;
+    font-size: 30px;
+    font-family: "Avenir Next Demi";
+    border: 1px solid #707070;
+    transition: all 0.4s ease;
+}
+
+#dmc button:hover {
+    background-color: #AC0008;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+.card--more {
+    border: 1px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: "Avenir Next Demi";
+    cursor: pointer;
+}
+
+
+
+.announcements,
+.virtual__tours {
+    flex: 5;
+    gap: 0;
+}
+
+.announcements *,
+.virtual__tours * {
+    font-size: 16px;
+}
+
+.ann__virt__container {
+    height: 88px;
+}
+
+.home--toured {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: #B2B1B1;
+    height: 34px;
+    align-items: center;
+    padding-inline: 11px;
+}
+
+.home--toured a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+
+}
+
+.home--toured a span {
+    color: white;
+    font-size: 12px;
+    font-family: "Avenir Next Demi";
+}
+
+.news__board__container {
+    height: 88px;
+    background-color: #707070;
+    padding-inline: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.home--valuta {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B2B1B1;
+    height: 34px;
+    align-items: center;
+    padding-inline: 11px;
+    font-size: 14px;
+    font-family: "Avenir Next Demi";
+}
+
+.home--valuta h2 {
+    font-family: "Avenir Next Bold";
+    font-size: 14px;
+    color: white;
+}
+
+.home--valuta div {
+    display: flex;
+    gap: 3px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.important {
+    padding-inline: 0;
+    display: block;
+
+}
+
+.important>div:first-child {
+    background-color: #A28951;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+    font-family: "Avenir Next Bold";
+    font-size: 24px;
+    height: 46px;
+    text-transform: uppercase;
+    border-bottom: 6px;
+}
+
+.important .dropdown {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    transition: all 0.4s ease;
+    padding-inline: 10px;
+    border-right: 6px solid #A28951;
+    border-left: 6px solid #A28951;
+    border-bottom: 6px solid #A28951;
+    top: -6px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.important.dropped .dropdown {
+    max-height: 500px;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.important img {
+    transition: all 0.4s ease;
+}
+
+.important.dropped img {
+    transform: rotate(180deg);
+}
+
+.important .dropdown a {
+    color: #AC0008;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 16px;
+    font-family: "Avenir Next Regular";
+    text-transform: none;
+}
+
+.news__board {
+    padding-inline: 0;
+    display: block;
+    position: relative;
+}
+.news__board .news-slide-prev{
+    position: absolute;
+    right: 13px;
+    top: 55px;
+    z-index: 5;
+}
+.news__board .news-slide-next{
+    position: absolute;
+    right: 13px;
+    top: 204px;
+    z-index: 5;
+}
+
+.news__board>div:first-child {
+    background-color: #FFC000;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: "Avenir Next Bold";
+    font-size: 24px;
+    height: 46px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.news__board .dropdown {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    transition: all 0.4s ease;
+    padding-inline: 33px;
+    border-right: 6px solid #FFC000;
+    border-left: 6px solid #FFC000;
+    border-bottom: 6px solid #FFC000;
+    top: -6px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 16px;
+    font-family: "Avenir Next Regular";
+    text-transform: none;
+    width: 655px;
+
+}
+
+.news__board.dropped .dropdown {
+    max-height: 198px;
+    height: 198px;
+    top: 0;
+    padding: 10px 33px;
+    background-color: white;
+
+}
+
+.news__board .dropdown h3 {
+    color: #AC0008;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Avenir Next Demi";
+    margin-bottom: 10px;
+    min-height: 32px;
+}
+
+.news__board .dropdown .swiper-slide div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Avenir Next Demi";
+}
+
+.news__board .dropdown .swiper-containerNews,
+.news__board .dropdown .swiper-wrapper,
+.news__board .dropdown .swiper-slide {
+    height: 100%;
+}
+
+.swiper-containerNews {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-containerNews.d-none {
+    display: none;
+}
+
+.news__board .dropdown .swiper-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__board .dropdown .swiper-slide img {
+    max-width: 147px;
+    height: auto;
+}
+
+.news__board--source {
+    margin-top: auto;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.news__board--source span,
+.news__board--source a {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.news__board img {
+    transition: all 0.4s ease;
+    flex-shrink: 0;
+}
+
+.news__board.dropped>div:first-child img {
+    transform: rotate(180deg);
+}
+
+/*
+.news__board--heighted {
+    min-height: 390px !important;
+    transition-delay: 0.3s;
+} */
+
+.join__grid>div:last-child {
+    min-height: 210px;
+    transition: all 0.4s ease;
+}
+
+
+.important>div:first-child,
+.news__board>div:first-child>img,
+.news__board>div:first-child .fa {
+    cursor: pointer;
+
+}
+
+.news__board>div:first-child .fa {
+    color: #AC0008;
+}
+
+.news__board .news-nav {
+    display: none;
+}
+
+.news__board.dropped .news-nav {
+    display: block;
+}
+/*
+.snapped body main {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+html.snapped {
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+
+    overflow-y: scroll;
+}
+
+html.snapped::-webkit-scrollbar {
+    display: none;
+}
+
+.no-snap {
+    scroll-snap-align: none !important;
+}
+
+
+
+.snapped .section__in__view {
+
+    scroll-snap-align: start;
+}
+.snapped .section__in__view:last-child{
+    scroll-snap-align: end;
+}
+
+
+
+@supports (scroll-margin-top: 0) {
+
+    .snapped .section__in__view {
+        scroll-margin-top: -50px;
+        scroll-margin-bottom: 350px;
+    }
+
+    .snapped #experiences {
+        scroll-margin-top: -50px;
+        scroll-margin-bottom: 380px;
+    }
+
+    #joinus {
+        scroll-margin-top: 0;
+    }
+
+    .footer.section__in__view {
+        scroll-margin-top: 300px;
+    }
+
+    .section__in__view.no-scroll-margin-top {
+        scroll-margin-top: 0;
+    }
+
+
+
+
+}
+
+ */
+
+.twice--text {
+    font-size: 34px;
+
+    color: #AC0008;
+    font-family: "Avenir Next Demi";
+    grid-column-end: span 2;
+}
+
+.twice--text>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
