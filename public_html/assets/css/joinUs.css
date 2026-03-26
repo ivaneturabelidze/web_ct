@@ -142,6 +142,10 @@ section.welcome h1 {
     font-family: 'Avenir Next LT Pro';
 }
 
+.flag-container{
+    margin-left: 10px;
+}
+
 .languages img {
     cursor: pointer;
 }
@@ -451,7 +455,7 @@ section.from .georgia p {
 
 .visit__us__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -747,7 +751,6 @@ section.from .georgia p {
     font-size: 16px;
     line-height: 18px;
     font-family: "Avenir Next Demi";
-    margin-bottom: 10px;
     min-height: 32px;
 }
 
