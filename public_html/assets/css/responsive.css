@@ -273,12 +273,17 @@
         display: none;
     }
 
-    .joinus__partners {
+    /* .joinus__partners {
         display: none;
     }
 
     .visit__us {
         display: none;
+    } */
+
+    .visit__us__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #experience .banner.banner--red {
