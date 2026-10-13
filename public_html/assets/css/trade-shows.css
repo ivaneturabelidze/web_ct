@@ -1,0 +1,50 @@
+/* Component styles use the existing site's Avenir font and brand palette.
+   Demo wrapper styles are separate from the embeddable component. */
+.trade-shows-demo { max-width: 1580px; margin: 46px auto; padding: 0 24px; font-family: "Avenir Next", Arial, sans-serif; }
+.trade-shows-intro { text-align: center; margin-bottom: 26px; color: #111; font-family: "Avenir Next", Arial, sans-serif; }
+.trade-shows-intro p { margin: 0; line-height: 1.5; }
+.trade-shows-intro p:first-child { font-size: clamp(18px, 1.5vw, 23px); font-weight: 600; margin-bottom: 6px; }
+.trade-shows-intro p:last-child { font-size: clamp(15px, 1.2vw, 18px); }
+.trade-shows { --trade-red: #AC0008; --trade-gold: #9E8959; --trade-bg: #eeeeec; background: var(--trade-bg); color: #111; padding: 24px 24px 16px; font-family: "Avenir Next", Arial, sans-serif; }
+.trade-shows *, .trade-shows *::before, .trade-shows *::after { box-sizing: border-box; }
+.trade-shows__header { text-align: center; margin-bottom: 12px; }
+.trade-shows__today { display: flex; justify-content: center; align-items: center; gap: 5px; color: #796943; font-size: 12px; letter-spacing: .055em; line-height: 1.5; margin: 0 0 12px; }
+.trade-shows__today::before, .trade-shows__today::after { content: ''; width: 65px; height: 1px; background: #b8a780; margin: 0 12px; }
+.trade-shows__header h2 { font-size: clamp(22px, 2vw, 29px); font-weight: 700; line-height: 1.3; letter-spacing: .01em; margin: 0; }
+.trade-shows__viewport { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: #c7bdab transparent; padding: 5px 0 12px; }
+.trade-shows__viewport:focus-visible { outline: 2px solid var(--trade-red); outline-offset: 3px; }
+.trade-shows__track { display: flex; position: relative; width: max-content; min-width: 100%; list-style: none; margin: 0; padding: 0; }
+.trade-show { flex: 0 0 180px; width: 180px; min-height: 286px; position: relative; padding: 12px 10px 18px; text-align: center; isolation: isolate; }
+/* Every segment has the same baseline, making one continuous timeline. */
+.trade-show::before { content: ''; position: absolute; top: 148px; left: 0; right: 0; height: 1px; background: #c0b398; z-index: 1; }
+.trade-show::after { content: ''; position: absolute; top: 42px; bottom: 25px; right: 0; width: 1px; background: #d9d5cc; z-index: -1; }
+.trade-show:last-child::after { display: none; }
+.trade-show__panel { position: absolute; top: 0; bottom: 0; left: 8px; right: 8px; z-index: -1; }
+.trade-show--next .trade-show__panel { background: #fff; border: 1px solid #b7a47a; border-radius: 7px; box-shadow: 0 3px 10px rgb(67 54 29 / 6%); }
+.trade-show--next::after { background: transparent; }
+.trade-show__flag { height: 28px; margin: 0; display: flex; align-items: flex-start; justify-content: center; }
+.trade-show__flag span { background: #e8dfca; color: #64502c; font-size: 9px; font-weight: 600; letter-spacing: .11em; border-radius: 12px; padding: 5px 12px; line-height: 1; }
+.trade-show__logo { height: 72px; display: flex; align-items: center; justify-content: center; }
+.trade-show__logo img { display: block; width: 126px; max-width: 100%; height: 65px; object-fit: contain; mix-blend-mode: multiply; }
+.trade-show__stem { height: 28px; width: 1px; background: #c0b398; margin: 0 auto; }
+.trade-show__node { display: block; width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--trade-gold); background: #fafaf8; margin: 0 auto; position: relative; z-index: 2; }
+.trade-show__details { padding-top: 15px; }
+.trade-show__date { font-size: 14px; font-weight: 600; line-height: 1.45; margin: 0 0 5px; white-space: nowrap; }
+.trade-show__city { font-size: 13px; line-height: 1.4; margin: 0; color: #514e47; }
+.trade-show__booth { font-size: 12px; line-height: 1.4; margin: 6px 0 0; color: #514e47; }
+.trade-show__status { display: inline-block; margin: 12px 0 0; padding: 4px 12px; border-radius: 12px; background: #e7e1d5; color: #66583d; font-size: 10px; line-height: 1.2; }
+.trade-show--past .trade-show__logo { opacity: .65; }
+.trade-show--past .trade-show__node { background: #989794; border-color: #989794; }
+.trade-show--past .trade-show__date, .trade-show--past .trade-show__city { color: #6d6a64; }
+.trade-show--past .trade-show__status { color: #62605b; background: #e0dfdc; }
+.trade-show--next .trade-show__node, .trade-show--now .trade-show__node { background: var(--trade-red); border-color: var(--trade-red); box-shadow: 0 0 0 3px #fff; }
+.trade-show--next .trade-show__date, .trade-show--now .trade-show__date { color: var(--trade-red); }
+.trade-show--now .trade-show__status { background: #f0dfe0; color: #AC0008; }
+.trade-show__name { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media screen and (max-width: 992px) { .trade-shows { padding: 22px 16px 14px; } .trade-shows__header h2 { font-size: 24px; } .trade-show { width: 175px; flex-basis: 175px; } }
+@media screen and (max-width: 600px) { .trade-shows-demo { margin: 28px auto; padding: 0 12px; } .trade-shows-intro { margin-bottom: 22px; } .trade-shows { padding: 22px 12px 14px; } .trade-shows__header { margin-bottom: 14px; } .trade-shows__header h2 { font-size: 21px; line-height: 1.35; } .trade-shows__today { font-size: 11px; } .trade-shows__today::before, .trade-shows__today::after { width: 32px; margin: 0 7px; } .trade-show { width: 175px; flex-basis: 175px; } .trade-show__logo img { width: 119px; } .trade-show__date { font-size: 13px; } }
+/* These original assets contain generous transparent padding. Scale their
+   canvases to normalize visible artwork without changing either source file. */
+.trade-show__logo { overflow: hidden; }
+.trade-show__logo img[alt="Tourism EXPO Japan logo"] { width: 175px; height: 175px; max-width: none; flex-shrink: 0; }
+.trade-show__logo img[alt="TTG Travel Experience logo"] { width: 108px; height: 108px; max-width: none; flex-shrink: 0; }
