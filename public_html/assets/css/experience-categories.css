@@ -1,0 +1,366 @@
+/* Homepage teaser only. All source typography and the introduction/red bar stay in place. */
+.ct-category-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ddd;
+  font-family: "Avenir Next", sans-serif;
+  color: #000;
+}
+.ct-category-nav {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bbb transparent;
+  flex: 1;
+}
+.ct-category-filter {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 10px 0 12px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  color: #000;
+  font:
+    600 16px/22px "Avenir Next Demi",
+    "Avenir Next",
+    sans-serif;
+  cursor: pointer;
+}
+.ct-category-filter[aria-pressed="true"] {
+  font-weight: 600;
+  border-bottom-color: transparent;
+}
+.ct-category-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  pointer-events: none;
+  transition:
+    left 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ct-category-filter:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ct-category-filter:focus-visible,
+.ct-home-experiences button:focus-visible,
+.ct-home-view-all:focus-visible,
+#ct-experience-results:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+ .ct-home-experiences .experiences-grid {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #eee;
+  margin: 0;
+  padding: 2px 0 12px;
+  align-items: stretch;
+}
+ .ct-home-experiences .experiences-grid > .card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 244px;
+  min-width: 0;
+  scroll-snap-align: start;
+  cursor: pointer;
+  contain: layout paint style;
+}
+ .ct-home-experiences .experiences-grid > .card[hidden],
+
+  .ct-home-experiences
+  .experiences-grid
+  > .card:not([data-experience]) {
+  display: none !important;
+}
+.ct-home-experiences .card-preview {
+  opacity: 1 !important;
+  transition: none;
+}
+.ct-home-experiences .card-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  overflow: visible;
+  margin: 0;
+  background: transparent;
+}
+.ct-home-experiences .card-preview-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 244/150;
+  object-fit: cover;
+  object-position: center;
+  background: #eee;
+}
+.ct-home-experiences .card-preview-caption {
+  margin-top: 7px;
+  font:
+    400 14px/19px "Avenir Next",
+    sans-serif;
+  color: #000;
+  transition: color 0.25s ease-in-out;
+}
+.ct-home-experiences .card-hovered {
+  display: block;
+  position: static;
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+  width: 100%;
+  box-shadow: none;
+  transition: none;
+  flex: 1;
+}
+.ct-home-experiences .card-hovered-image,
+.ct-home-experiences .card-title {
+  display: none;
+}
+.ct-home-experiences .card-body {
+  min-height: 0;
+  padding: 5px 0 0;
+  margin: 0;
+  background: #fff;
+  font:
+    500 14px/19px "Avenir Next",
+    sans-serif;
+  overflow: hidden;
+}
+.ct-home-experiences .card-body p {
+  margin: 0;
+  line-height: 19px;
+  text-wrap: initial;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.ct-home-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 8px 0 30px;
+  font-family: "Avenir Next", sans-serif;
+}
+.ct-home-view-all {
+  order: 1;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.ct-home-view-all:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ct-home-view-all span {
+  margin-left: 8px;
+}
+.ct-home-arrows {
+  order: 2;
+  display: flex;
+  gap: 6px;
+}
+.ct-home-arrows button {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.ct-home-arrows button:disabled {
+  color: #aaa;
+  cursor: default;
+}
+@media (hover: hover) {
+  .ct-home-experiences .card:hover .card-preview-caption {
+    color: #ac0008;
+  }
+}
+.ct-home-experiences .card:focus-visible .card-preview-caption,
+.ct-home-experiences .card[aria-expanded="true"] .card-preview-caption {
+  color: #ac0008;
+}
+@media (max-width: 767px) {
+  .ct-category-bar {
+    margin-bottom: 18px;
+  }
+  .ct-category-nav {
+    gap: 22px;
+  }
+  .ct-category-filter {
+    font-size: 15px;
+    line-height: 21px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+   .ct-home-experiences .experiences-grid {
+    gap: 16px;
+  }
+   .ct-home-experiences .experiences-grid > .card {
+    flex: 0 0 calc(100vw - 40px);
+    scroll-snap-align: start;
+  }
+  .ct-home-footer {
+    margin-top: 4px;
+  }
+}
+
+/* Reuse the original enlarged image, white body, title and shadow outside the clipping strip. */
+.ct-home-experiences .card:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+.ct-home-experiences .card[aria-expanded="true"] .card-preview {
+  opacity: 0.18 !important;
+  transition: opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.ct-home-experiences .card[aria-expanded="true"] > .card-hovered {
+  visibility: hidden;
+}
+.ct-home-hover.card-hovered {
+  position: fixed;
+  inset: auto;
+  right: auto;
+  transform: scale(0.9);
+  transform-origin: 50% 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Avenir Next", sans-serif;
+  z-index: 10000;
+  pointer-events: auto;
+  opacity: 0.1;
+  box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5);
+  max-height: calc(100dvh - 16px);
+  overflow: auto;
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ct-home-hover.card-hovered.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.ct-home-hover[hidden] {
+  display: none !important;
+}
+.ct-home-hover .card-hovered-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 244/150;
+  overflow: hidden;
+  margin: 0;
+  background: #eee center/cover no-repeat;
+}
+.ct-home-hover .card-hovered-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.18s ease-out;
+}
+.ct-home-hover .card-hovered-image img.is-detail-ready {
+  opacity: 1;
+}
+.ct-home-hover .card-body {
+  display: block;
+  padding: 6px 8px;
+  min-height: 160px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  background: #fff;
+  color: #000;
+  overflow: visible;
+}
+.ct-home-hover .card-title {
+  display: block;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #ac0008;
+  margin: 0 0 5px;
+}
+.ct-home-hover .card-body p {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  text-wrap: balance;
+  overflow: visible;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ct-home-hover.card-hovered {
+    transition: none;
+    transform: none;
+  }
+  .ct-home-hover .card-hovered-image img {
+    transition: none;
+  }
+  .ct-home-experiences .card-preview-caption {
+    transition: none;
+  }
+  .ct-home-experiences .card[aria-expanded="true"] .card-preview {
+    transition: none;
+  }
+  .ct-category-indicator {
+    transition: none;
+  }
+}
+
+/* Three identical cycles make native horizontal scrolling continuous. Only the middle cycle is exposed to assistive technology. */
+.ct-home-experiences #ct-experience-results {
+  overflow-anchor: none;
+}
+.ct-home-experiences
+  #ct-experience-results.is-transitioning
+  > .card:not([aria-expanded="true"]) {
+  pointer-events: none;
+}
+.ct-home-experiences #ct-experience-results.is-transitioning {
+  overflow-x: hidden;
+  scroll-snap-type: none;
+}
+
+ .ct-home-experiences .experiences-grid {
+  scrollbar-width: none;
+}
+.ct-home-experiences #ct-experience-results::-webkit-scrollbar {
+  display: none;
+}
+.ct-home-experiences.ct-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+.ct-home-experiences.ct-dragging * {
+  cursor: grabbing !important;
+}

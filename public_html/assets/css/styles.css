@@ -3359,6 +3359,11 @@ span.underlineed::after {
 }
 
 
+.policy-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 
 

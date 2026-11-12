@@ -302,6 +302,17 @@ section.from .georgia.georgia6 {
     background-image: url('../images/newimages/Uplistsikhe_402288112 WWWW.png');
 }
 
+/* joinUs.html — ფონის სურათები იტვირთება სლაიდის მიხედვით (assets/js/script.js) */
+#joinus .swiper-container6.joinus-welcome-lazy .swiper-slide section.welcome {
+    background-image: none;
+    background-color: #2a2a2a;
+}
+
+section.from.joinus-from-slider .georgia {
+    background-image: none;
+    background-color: #2a2a2a;
+}
+
 
 
 
